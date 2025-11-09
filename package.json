@@ -11,12 +11,12 @@
     ],
     "scripts": {
         "build": "rollup -c",
-        "test": "jest",
+        "test": "jest --config tests/jest.config.js",
         "storybook": "storybook dev -p 9000",
         "storybook:build": "storybook build",
-        "lint": "npx eslint src test",
+        "lint": "npx eslint src tests",
         "lint:fix": "npm run lint -- --fix",
-        "prettier": "npx prettier src test --check",
+        "prettier": "npx prettier src tests --check",
         "prettier:fix": "npm run prettier -- --write",
         "format": "npm run lint:fix && npm run prettier:fix",
         "clean": "rm -rf build"
