@@ -1,0 +1,244 @@
+@use "../utilities/variables" as *;
+
+// ============================================================================
+// Fade In Animation
+// ============================================================================
+
+/* Fade in an element */
+.animation-fade-in {
+    animation-name: fade-in;
+    animation-duration: $base-duration-1000;
+    animation-timing-function: ease-in-out;
+
+    &.fast {
+        animation-duration: $base-duration-300;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+// ============================================================================
+// Fade Out Animation
+// ============================================================================
+
+/* Fade out an element */
+.animation-fade-out {
+    animation-name: fade-out;
+    animation-duration: $base-duration-1000;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+    &.fast {
+        animation-duration: $base-duration-300;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+// ============================================================================
+// Fade Up Animation
+// ============================================================================
+
+/* Fade in and slide up an element */
+.animation-fade-up {
+    opacity: 0;
+    animation-name: fade-up;
+    animation-duration: $base-duration-300;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: $base-duration-1000;
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0.8;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// ============================================================================
+// Fade Down Animation
+// ============================================================================
+
+/* Fade an element out and slide down */
+.animation-fade-down {
+    animation-name: fade-down;
+    animation-duration: $base-duration-300;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translateY(100%);
+    }
+}
+
+// ============================================================================
+// Grow X Animation
+// ============================================================================
+
+/* Grow an element width from 0 to 100% */
+.animation-grow-x {
+    width: 0%;
+    animation-name: grow-x;
+    animation-duration: $base-duration-300;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-delay: $base-duration-500;
+}
+
+@keyframes grow-x {
+    to {
+        width: 100%;
+    }
+}
+
+// ============================================================================
+// Shrink X Animation
+// ============================================================================
+
+/* Shrink an element from 100% to 0% */
+.animation-shrink-x {
+    animation-name: shrink-x;
+    animation-duration: $base-duration-300;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: $base-duration-500;
+}
+
+@keyframes shrink-x {
+    to {
+        width: 0%;
+    }
+}
+
+// ============================================================================
+// Scale In Animation
+// ============================================================================
+
+/* Fade in an element and scale it fast */
+.animation-scale-in {
+    animation-name: scale-in;
+    animation-duration: 0.15s;
+    animation-timing-function: cubic-bezier(0.2, 0, 0.13, 1.5);
+}
+
+@keyframes scale-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+// ============================================================================
+// Pulse Animation
+// ============================================================================
+
+/* Pulse an element's opacity */
+.animation-pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+// ============================================================================
+// Pulse In Animation
+// ============================================================================
+
+/* Pulse in an element */
+.animation-pulse-in {
+    animation-name: pulse-in;
+    animation-duration: $base-duration-500;
+}
+
+@keyframes pulse-in {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+// ============================================================================
+// Hover Grow Animation
+// ============================================================================
+
+/* Increase scale of an element on hover */
+.hover-grow,
+.animation-hover-grow {
+    transition: transform $base-duration-300;
+    backface-visibility: hidden;
+
+    &:hover {
+        transform: scale(1.025);
+    }
+}
+
+// ============================================================================
+// Rotate Animation
+// ============================================================================
+
+/* Rotate an element 360 degrees over and over, used for spinners */
+.animation-rotate {
+    animation: rotate-keyframes 1s linear infinite;
+}
+
+@keyframes rotate-keyframes {
+    100% {
+        transform: rotate(360deg);
+    }
+}
