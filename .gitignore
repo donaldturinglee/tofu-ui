@@ -300,3 +300,6 @@ storybook-static/
 # Ignore all local history of files
 .history
 .ionide
+
+### Tofu UI ###
+!src/components/icon/
