@@ -1,5 +1,6 @@
 import React from "react";
 import type { IconProps, SVGData } from "./Icon.types";
+import { ClassNames } from "../../utilities/classnames";
 
 function createIconComponent(name: string, defaultClassName: string, getSVGData: () => SVGData) {
     const svgDataByHeight = getSVGData()
@@ -29,6 +30,7 @@ function createIconComponent(name: string, defaultClassName: string, getSVGData:
             const path = svgDataByHeight[naturalHeight].path
             const labelled = ariaLabel || arialabelledby
             const role = labelled ? "img" : undefined
+            const classes = ClassNames(defaultClassName, className)
 
             return (
                 <svg
@@ -39,7 +41,7 @@ function createIconComponent(name: string, defaultClassName: string, getSVGData:
                     focusable={(tabIndex ?? -1) >= 0 ? "true" : "false"}
                     aria-label={ariaLabel}
                     aria-labelledby={arialabelledby}
-                    className={`${defaultClassName} ${className}`.trim()}
+                    className={classes}
                     role={role}
                     viewBox={`0 0 ${naturalWidth} ${naturalHeight}`}
                     width={width}
