@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+
+// ============================================================================
+// Primary Button
+// ============================================================================
+$button-primary-background-color-active: $base-color-blue-7-light;
+$button-primary-background-color-disabled: $base-color-blue-1-light;
+$button-primary-background-color-hover: $base-color-blue-6-light;
+$button-primary-background-color-rest: $base-color-blue-5-light;
+$button-primary-border-color-active: rgba($base-color-black-light, 0.15);
+$button-primary-border-color-disabled: $base-color-blue-1-light;
+$button-primary-border-color-hover: rgba($base-color-black-light, 0.15);
+$button-primary-border-color-rest: rgba($base-color-black-light, 0.15);
+$button-primary-foreground-color-disabled: rgba($base-color-white-light, 0.8);
+$button-primary-foreground-color-rest: $base-color-white-light;
+$button-primary-icon-color-rest: rgba($base-color-white-light, 0.8);
+$button-primary-shadow-selected: inset 0px 1px 0px 0px rgba($base-color-black-light, 0.3);
