@@ -1,0 +1,29 @@
+@use "../../styles/base/typography" as *;
+@use "../../styles/utilities/variables" as *;
+
+.tofu-heading {
+    margin: 0;
+    font-size: $text-title-size-large;
+    font-weight: $base-text-weight-semibold;
+}
+
+.tofu-heading[data-variant="small"] {
+    font-family: $font-stack-sans-serif;
+    font-size: $text-title-size-small;
+    font-weight: $text-title-weight-small;
+    line-height: $text-title-line-height-small;
+}
+
+.tofu-heading[data-variant="medium"] {
+    font-family: $font-stack-sans-serif;
+    font-size: $text-title-size-medium;
+    font-weight: $text-title-weight-medium;
+    line-height: $text-title-line-height-medium;
+}
+
+.tofu-heading[data-variant="large"] {
+    font-family: $font-stack-sans-serif;
+    font-size: $text-title-size-large;
+    font-weight: $text-title-weight-large;
+    line-height: $text-title-line-height-large;
+}
