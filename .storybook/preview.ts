@@ -11,8 +11,8 @@ const preview: Preview = {
         options: {
             storySort: {
                 order: [
-                    "Stories",
-                    ["Introduction", "*"],
+                    "Introduction",
+                    ["Getting Started", "*"],
                     "Components",
                     [
                         "Button",
