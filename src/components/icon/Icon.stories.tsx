@@ -29,40 +29,56 @@ export const Default: StoryFn<typeof AccessibilityIcon> = () => (
             </div>
         </div>
         <div>
-            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Vertical Align</h3>
+            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>
+                Vertical Align
+            </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                 <div style={{ fontSize: "16px", lineHeight: "1.5" }}>
-                    baseline: Text with icon <AccessibilityIcon size={16} verticalAlign="baseline" /> inline
+                    baseline: Text with icon{" "}
+                    <AccessibilityIcon size={16} verticalAlign="baseline" /> inline
                 </div>
                 <div style={{ fontSize: "16px", lineHeight: "1.5" }}>
-                    middle: Text with icon <AccessibilityIcon size={16} verticalAlign="middle" /> inline
+                    middle: Text with icon <AccessibilityIcon size={16} verticalAlign="middle" />{" "}
+                    inline
                 </div>
                 <div style={{ fontSize: "16px", lineHeight: "1.5" }}>
-                    text-bottom: Text with icon <AccessibilityIcon size={16} verticalAlign="text-bottom" /> inline
+                    text-bottom: Text with icon{" "}
+                    <AccessibilityIcon size={16} verticalAlign="text-bottom" /> inline
                 </div>
                 <div style={{ fontSize: "16px", lineHeight: "1.5" }}>
-                    text-top: Text with icon <AccessibilityIcon size={16} verticalAlign="text-top" /> inline
+                    text-top: Text with icon{" "}
+                    <AccessibilityIcon size={16} verticalAlign="text-top" /> inline
                 </div>
             </div>
         </div>
         <div>
-            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>With Title (Tooltip)</h3>
+            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>
+                With Title (Tooltip)
+            </h3>
             <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
                 <AccessibilityIcon size={24} title="Accessibility Icon" />
-                <span style={{ fontSize: "14px", color: "#666" }}>Hover over the icon to see the title</span>
+                <span style={{ fontSize: "14px", color: "#666" }}>
+                    Hover over the icon to see the title
+                </span>
             </div>
         </div>
         <div>
-            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>With Aria Label (Accessible)</h3>
+            <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>
+                With Aria Label (Accessible)
+            </h3>
             <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
                 <AccessibilityIcon size={24} aria-label="Accessibility settings" />
-                <span style={{ fontSize: "14px", color: "#666" }}>Icon with aria-label for screen readers (role="img")</span>
+                <span style={{ fontSize: "14px", color: "#666" }}>
+                    Icon with aria-label for screen readers (role="img")
+                </span>
             </div>
         </div>
     </div>
 );
 
-export const Playground: StoryFn<typeof AccessibilityIcon> = (args) => <AccessibilityIcon {...args} />;
+export const Playground: StoryFn<typeof AccessibilityIcon> = (args) => (
+    <AccessibilityIcon {...args} />
+);
 
 Playground.args = {
     size: 16,

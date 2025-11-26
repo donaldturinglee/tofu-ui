@@ -3,8 +3,8 @@ import type { IconProps, SVGData } from "./Icon.types";
 import { ClassNames } from "../../utilities/classnames";
 
 function createIconComponent(name: string, defaultClassName: string, getSVGData: () => SVGData) {
-    const svgDataByHeight = getSVGData()
-    const heights = Object.keys(svgDataByHeight)
+    const svgDataByHeight = getSVGData();
+    const heights = Object.keys(svgDataByHeight);
 
     const Icon = React.forwardRef<SVGSVGElement, IconProps>(
         (
@@ -23,14 +23,14 @@ function createIconComponent(name: string, defaultClassName: string, getSVGData:
             },
             ref,
         ) => {
-            const height = size
-            const naturalHeight = closestNaturalHeight(heights, height)
-            const naturalWidth = svgDataByHeight[naturalHeight].width
-            const width = height * (naturalWidth / parseInt(naturalHeight, 10))
-            const path = svgDataByHeight[naturalHeight].path
-            const labelled = ariaLabel || arialabelledby
-            const role = labelled ? "img" : undefined
-            const classes = ClassNames(defaultClassName, className)
+            const height = size;
+            const naturalHeight = closestNaturalHeight(heights, height);
+            const naturalWidth = svgDataByHeight[naturalHeight].width;
+            const width = height * (naturalWidth / parseInt(naturalHeight, 10));
+            const path = svgDataByHeight[naturalHeight].path;
+            const labelled = ariaLabel || arialabelledby;
+            const role = labelled ? "img" : undefined;
+            const classes = ClassNames(defaultClassName, className);
 
             return (
                 <svg
@@ -58,27 +58,36 @@ function createIconComponent(name: string, defaultClassName: string, getSVGData:
                     {title ? <title>{title}</title> : null}
                     {path}
                 </svg>
-            )
+            );
         },
-    )
+    );
 
-    Icon.displayName = name
+    Icon.displayName = name;
 
-    return Icon
+    return Icon;
 }
 
 function closestNaturalHeight(naturalHeights: string[], height: number): string {
     const closestHeight = naturalHeights
         .map((naturalHeight) => parseInt(naturalHeight, 10))
-        .reduce((acc, naturalHeight) => (naturalHeight <= height ? naturalHeight : acc), parseInt(naturalHeights[0], 10))
-    return closestHeight.toString()
+        .reduce(
+            (acc, naturalHeight) => (naturalHeight <= height ? naturalHeight : acc),
+            parseInt(naturalHeights[0], 10),
+        );
+    return closestHeight.toString();
 }
 
-export const AccessibilityIcon = /*#__PURE__*/createIconComponent("AccessibilityIcon", "icon icon-accessibility", () => {
-    return {
-        "16": {
-            "width": 16,
-            "path": <path d="M6.75 3.25a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0M8 1a2.25 2.25 0 0 0-2.19 2.766l-1.612-.65a1.6 1.6 0 0 0-2.076.872 1.58 1.58 0 0 0 .87 2.07L5 6.869v2.384l-1.813 3.41a1.591 1.591 0 1 0 2.81 1.495L8 10.39l2.004 3.768a1.591 1.591 0 0 0 2.81-1.494L11 9.252V6.869l2.008-.811a1.58 1.58 0 0 0 .87-2.07 1.6 1.6 0 0 0-2.076-.873l-1.611.651A2.25 2.25 0 0 0 8 1M3.047 4.369a.6.6 0 0 1 .776-.327l3.428 1.385a2 2 0 0 0 1.498 0l3.428-1.385a.6.6 0 0 1 .776.327.58.58 0 0 1-.32.762l-2.008.81A1 1 0 0 0 10 6.87v2.383a1 1 0 0 0 .117.47l1.814 3.411a.592.592 0 0 1-1.044.556L8.883 9.92a1 1 0 0 0-1.766 0l-2.003 3.767a.591.591 0 1 1-1.044-.555l1.813-3.41A1 1 0 0 0 6 9.253V6.869a1 1 0 0 0-.625-.927L3.367 5.13a.58.58 0 0 1-.32-.762Z" />
-        }
-    };
-});
+export const AccessibilityIcon = /*#__PURE__*/ createIconComponent(
+    "AccessibilityIcon",
+    "icon icon-accessibility",
+    () => {
+        return {
+            "16": {
+                width: 16,
+                path: (
+                    <path d="M6.75 3.25a1.25 1.25 0 1 1 2.5 0 1.25 1.25 0 0 1-2.5 0M8 1a2.25 2.25 0 0 0-2.19 2.766l-1.612-.65a1.6 1.6 0 0 0-2.076.872 1.58 1.58 0 0 0 .87 2.07L5 6.869v2.384l-1.813 3.41a1.591 1.591 0 1 0 2.81 1.495L8 10.39l2.004 3.768a1.591 1.591 0 0 0 2.81-1.494L11 9.252V6.869l2.008-.811a1.58 1.58 0 0 0 .87-2.07 1.6 1.6 0 0 0-2.076-.873l-1.611.651A2.25 2.25 0 0 0 8 1M3.047 4.369a.6.6 0 0 1 .776-.327l3.428 1.385a2 2 0 0 0 1.498 0l3.428-1.385a.6.6 0 0 1 .776.327.58.58 0 0 1-.32.762l-2.008.81A1 1 0 0 0 10 6.87v2.383a1 1 0 0 0 .117.47l1.814 3.411a.592.592 0 0 1-1.044.556L8.883 9.92a1 1 0 0 0-1.766 0l-2.003 3.767a.591.591 0 1 1-1.044-.555l1.813-3.41A1 1 0 0 0 6 9.253V6.869a1 1 0 0 0-.625-.927L3.367 5.13a.58.58 0 0 1-.32-.762Z" />
+                ),
+            },
+        };
+    },
+);
