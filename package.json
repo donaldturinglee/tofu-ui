@@ -46,6 +46,7 @@
         "@rollup/plugin-node-resolve": "^16.0.2",
         "@rollup/plugin-terser": "^0.4.4",
         "@rollup/plugin-typescript": "^12.1.4",
+        "@storybook/addon-a11y": "^9.1.10",
         "@storybook/addon-docs": "^9.1.10",
         "@storybook/addon-webpack5-compiler-swc": "^4.0.1",
         "@storybook/react-webpack5": "^9.1.10",

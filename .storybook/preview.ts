@@ -23,8 +23,18 @@ const preview: Preview = {
                 ],
             },
         },
+        a11y: {
+            context: "body",
+            config: {},
+            options: {},
+        },
         docs: {
             codePanel: true,
+        },
+    },
+    initialGlobals: {
+        a11y: {
+            manual: false,
         },
     },
 };
