@@ -276,120 +276,120 @@ $viewport-range-landscape: "(orientation: landscape)";
 // ============================================================================
 
 // Base colors (light)
-$base-color-black-light: #1F2328 !default;
-$base-color-white-light: #FFFFFF !default;
+$base-color-black-light: #1f2328 !default;
+$base-color-white-light: #ffffff !default;
 $base-color-transparent-light: rgba(255, 255, 255, 0) !default;
 $base-color-inset-light: $base-color-white-light !default;
 
 // Neutral scale (light)
 $base-color-neutral-0-light: $base-color-white-light !default;
-$base-color-neutral-1-light: #F6F8FA !default;
-$base-color-neutral-2-light: #EFF2F5 !default;
-$base-color-neutral-3-light: #E6EAEF !default;
-$base-color-neutral-4-light: #E0E6EB !default;
-$base-color-neutral-5-light: #DAE0E7 !default;
-$base-color-neutral-6-light: #D1D9E0 !default;
-$base-color-neutral-7-light: #C8D1DA !default;
-$base-color-neutral-8-light: #818B98 !default;
-$base-color-neutral-9-light: #59636E !default;
-$base-color-neutral-10-light: #454C54 !default;
-$base-color-neutral-11-light: #393F46 !default;
-$base-color-neutral-12-light: #25292E !default;
+$base-color-neutral-1-light: #f6f8fa !default;
+$base-color-neutral-2-light: #eff2f5 !default;
+$base-color-neutral-3-light: #e6eaef !default;
+$base-color-neutral-4-light: #e0e6eb !default;
+$base-color-neutral-5-light: #dae0e7 !default;
+$base-color-neutral-6-light: #d1d9e0 !default;
+$base-color-neutral-7-light: #c8d1da !default;
+$base-color-neutral-8-light: #818b98 !default;
+$base-color-neutral-9-light: #59636e !default;
+$base-color-neutral-10-light: #454c54 !default;
+$base-color-neutral-11-light: #393f46 !default;
+$base-color-neutral-12-light: #25292e !default;
 $base-color-neutral-13-light: $base-color-black-light !default;
 
 // Blue scale (light)
-$base-color-blue-0-light: #DDF4FF !default;
-$base-color-blue-1-light: #B6E3FF !default;
-$base-color-blue-2-light: #80CCFF !default;
-$base-color-blue-3-light: #54AEFF !default;
-$base-color-blue-4-light: #218BFF !default;
-$base-color-blue-5-light: #0969DA !default;
-$base-color-blue-6-light: #0550AE !default;
-$base-color-blue-7-light: #033D8B !default;
-$base-color-blue-8-light: #0A3069 !default;
+$base-color-blue-0-light: #ddf4ff !default;
+$base-color-blue-1-light: #b6e3ff !default;
+$base-color-blue-2-light: #80ccff !default;
+$base-color-blue-3-light: #54aeff !default;
+$base-color-blue-4-light: #218bff !default;
+$base-color-blue-5-light: #0969da !default;
+$base-color-blue-6-light: #0550ae !default;
+$base-color-blue-7-light: #033d8b !default;
+$base-color-blue-8-light: #0a3069 !default;
 $base-color-blue-9-light: #002155 !default;
 
 // Green scale (light)
-$base-color-green-0-light: #DAFBE1 !default;
-$base-color-green-1-light: #ACEEBB !default;
-$base-color-green-2-light: #6FDD8B !default;
-$base-color-green-3-light: #4AC26B !default;
-$base-color-green-4-light: #2DA44E !default;
-$base-color-green-5-light: #1A7F37 !default;
+$base-color-green-0-light: #dafbe1 !default;
+$base-color-green-1-light: #aceebb !default;
+$base-color-green-2-light: #6fdd8b !default;
+$base-color-green-3-light: #4ac26b !default;
+$base-color-green-4-light: #2da44e !default;
+$base-color-green-5-light: #1a7f37 !default;
 $base-color-green-6-light: #116329 !default;
-$base-color-green-7-light: #044F1E !default;
-$base-color-green-8-light: #003D16 !default;
-$base-color-green-9-light: #002D11 !default;
+$base-color-green-7-light: #044f1e !default;
+$base-color-green-8-light: #003d16 !default;
+$base-color-green-9-light: #002d11 !default;
 
 // Yellow scale (light)
-$base-color-yellow-0-light: #FFF8C5 !default;
-$base-color-yellow-1-light: #FAE17D !default;
-$base-color-yellow-2-light: #EAC54F !default;
-$base-color-yellow-3-light: #D4A72C !default;
-$base-color-yellow-4-light: #BF8700 !default;
-$base-color-yellow-5-light: #9A6700 !default;
-$base-color-yellow-6-light: #7D4E00 !default;
-$base-color-yellow-7-light: #633C01 !default;
-$base-color-yellow-8-light: #4D2D00 !default;
-$base-color-yellow-9-light: #3B2300 !default;
+$base-color-yellow-0-light: #fff8c5 !default;
+$base-color-yellow-1-light: #fae17d !default;
+$base-color-yellow-2-light: #eac54f !default;
+$base-color-yellow-3-light: #d4a72c !default;
+$base-color-yellow-4-light: #bf8700 !default;
+$base-color-yellow-5-light: #9a6700 !default;
+$base-color-yellow-6-light: #7d4e00 !default;
+$base-color-yellow-7-light: #633c01 !default;
+$base-color-yellow-8-light: #4d2d00 !default;
+$base-color-yellow-9-light: #3b2300 !default;
 
 // Orange scale (light)
-$base-color-orange-0-light: #FFF1E5 !default;
-$base-color-orange-1-light: #FFD8B5 !default;
-$base-color-orange-2-light: #FFB77C !default;
-$base-color-orange-3-light: #FB8F44 !default;
-$base-color-orange-4-light: #E16F24 !default;
-$base-color-orange-5-light: #BC4C00 !default;
+$base-color-orange-0-light: #fff1e5 !default;
+$base-color-orange-1-light: #ffd8b5 !default;
+$base-color-orange-2-light: #ffb77c !default;
+$base-color-orange-3-light: #fb8f44 !default;
+$base-color-orange-4-light: #e16f24 !default;
+$base-color-orange-5-light: #bc4c00 !default;
 $base-color-orange-6-light: #953800 !default;
-$base-color-orange-7-light: #762C00 !default;
-$base-color-orange-8-light: #5C2200 !default;
+$base-color-orange-7-light: #762c00 !default;
+$base-color-orange-8-light: #5c2200 !default;
 $base-color-orange-9-light: #471700 !default;
 
 // Red scale (light)
-$base-color-red-0-light: #FFEBE9 !default;
-$base-color-red-1-light: #FFCECB !default;
-$base-color-red-2-light: #FFABA8 !default;
-$base-color-red-3-light: #FF8182 !default;
-$base-color-red-4-light: #FA4549 !default;
-$base-color-red-5-light: #CF222E !default;
-$base-color-red-6-light: #A40E26 !default;
-$base-color-red-7-light: #82071E !default;
+$base-color-red-0-light: #ffebe9 !default;
+$base-color-red-1-light: #ffcecb !default;
+$base-color-red-2-light: #ffaba8 !default;
+$base-color-red-3-light: #ff8182 !default;
+$base-color-red-4-light: #fa4549 !default;
+$base-color-red-5-light: #cf222e !default;
+$base-color-red-6-light: #a40e26 !default;
+$base-color-red-7-light: #82071e !default;
 $base-color-red-8-light: #660018 !default;
-$base-color-red-9-light: #4C0014 !default;
+$base-color-red-9-light: #4c0014 !default;
 
 // Purple scale (light)
-$base-color-purple-0-light: #FBEFFF !default;
-$base-color-purple-1-light: #ECD8FF !default;
-$base-color-purple-2-light: #D8B9FF !default;
-$base-color-purple-3-light: #C297FF !default;
-$base-color-purple-4-light: #A475F9 !default;
-$base-color-purple-5-light: #8250DF !default;
-$base-color-purple-6-light: #6639BA !default;
-$base-color-purple-7-light: #512A97 !default;
-$base-color-purple-8-light: #3E1F79 !default;
-$base-color-purple-9-light: #2E1461 !default;
+$base-color-purple-0-light: #fbefff !default;
+$base-color-purple-1-light: #ecd8ff !default;
+$base-color-purple-2-light: #d8b9ff !default;
+$base-color-purple-3-light: #c297ff !default;
+$base-color-purple-4-light: #a475f9 !default;
+$base-color-purple-5-light: #8250df !default;
+$base-color-purple-6-light: #6639ba !default;
+$base-color-purple-7-light: #512a97 !default;
+$base-color-purple-8-light: #3e1f79 !default;
+$base-color-purple-9-light: #2e1461 !default;
 
 // Pink scale (light)
-$base-color-pink-0-light: #FFEFF7 !default;
-$base-color-pink-1-light: #FFD3EB !default;
-$base-color-pink-2-light: #FFADDA !default;
-$base-color-pink-3-light: #FF80C8 !default;
-$base-color-pink-4-light: #E85AAD !default;
-$base-color-pink-5-light: #BF3989 !default;
-$base-color-pink-6-light: #99286E !default;
+$base-color-pink-0-light: #ffeff7 !default;
+$base-color-pink-1-light: #ffd3eb !default;
+$base-color-pink-2-light: #ffadda !default;
+$base-color-pink-3-light: #ff80c8 !default;
+$base-color-pink-4-light: #e85aad !default;
+$base-color-pink-5-light: #bf3989 !default;
+$base-color-pink-6-light: #99286e !default;
 $base-color-pink-7-light: #772057 !default;
 $base-color-pink-8-light: #611347 !default;
-$base-color-pink-9-light: #4D0336 !default;
+$base-color-pink-9-light: #4d0336 !default;
 
 // Coral scale (light)
-$base-color-coral-0-light: #FFF0EB !default;
-$base-color-coral-1-light: #FFD6CC !default;
-$base-color-coral-2-light: #FFB4A1 !default;
-$base-color-coral-3-light: #FD8C73 !default;
-$base-color-coral-4-light: #EC6547 !default;
-$base-color-coral-5-light: #C4432B !default;
-$base-color-coral-6-light: #9E2F1C !default;
-$base-color-coral-7-light: #801F0F !default;
+$base-color-coral-0-light: #fff0eb !default;
+$base-color-coral-1-light: #ffd6cc !default;
+$base-color-coral-2-light: #ffb4a1 !default;
+$base-color-coral-3-light: #fd8c73 !default;
+$base-color-coral-4-light: #ec6547 !default;
+$base-color-coral-5-light: #c4432b !default;
+$base-color-coral-6-light: #9e2f1c !default;
+$base-color-coral-7-light: #801f0f !default;
 $base-color-coral-8-light: #691105 !default;
 $base-color-coral-9-light: #510901 !default;
 
@@ -397,120 +397,120 @@ $base-color-coral-9-light: #510901 !default;
 
 // Base colors (dark)
 $base-color-black-dark: #010409 !default;
-$base-color-white-dark: #FFFFFF !default;
+$base-color-white-dark: #ffffff !default;
 $base-color-transparent-dark: rgba(0, 0, 0, 0) !default;
 $base-color-inset-dark: $base-color-black-dark !default;
 
 // Neutral scale (dark)
 $base-color-neutral-0-dark: $base-color-black-dark !default;
-$base-color-neutral-1-dark: #0D1117 !default;
-$base-color-neutral-2-dark: #151B23 !default;
+$base-color-neutral-1-dark: #0d1117 !default;
+$base-color-neutral-2-dark: #151b23 !default;
 $base-color-neutral-3-dark: #212830 !default;
-$base-color-neutral-4-dark: #262C36 !default;
-$base-color-neutral-5-dark: #2A313C !default;
-$base-color-neutral-6-dark: #2F3742 !default;
-$base-color-neutral-7-dark: #3D444D !default;
-$base-color-neutral-8-dark: #656C76 !default;
-$base-color-neutral-9-dark: #9198A1 !default;
-$base-color-neutral-10-dark: #B7BDC8 !default;
-$base-color-neutral-11-dark: #D1D7E0 !default;
-$base-color-neutral-12-dark: #F0F6FC !default;
+$base-color-neutral-4-dark: #262c36 !default;
+$base-color-neutral-5-dark: #2a313c !default;
+$base-color-neutral-6-dark: #2f3742 !default;
+$base-color-neutral-7-dark: #3d444d !default;
+$base-color-neutral-8-dark: #656c76 !default;
+$base-color-neutral-9-dark: #9198a1 !default;
+$base-color-neutral-10-dark: #b7bdc8 !default;
+$base-color-neutral-11-dark: #d1d7e0 !default;
+$base-color-neutral-12-dark: #f0f6fc !default;
 $base-color-neutral-13-dark: $base-color-white-dark !default;
 
 // Blue scale (dark)
-$base-color-blue-0-dark: #CAE8FF !default;
-$base-color-blue-1-dark: #A5D6FF !default;
-$base-color-blue-2-dark: #79C0FF !default;
-$base-color-blue-3-dark: #58A6FF !default;
-$base-color-blue-4-dark: #388BFD !default;
-$base-color-blue-5-dark: #1F6FEB !default;
-$base-color-blue-6-dark: #1158C7 !default;
-$base-color-blue-7-dark: #0D419D !default;
-$base-color-blue-8-dark: #0C2D6B !default;
-$base-color-blue-9-dark: #051D4D !default;
+$base-color-blue-0-dark: #cae8ff !default;
+$base-color-blue-1-dark: #a5d6ff !default;
+$base-color-blue-2-dark: #79c0ff !default;
+$base-color-blue-3-dark: #58a6ff !default;
+$base-color-blue-4-dark: #388bfd !default;
+$base-color-blue-5-dark: #1f6feb !default;
+$base-color-blue-6-dark: #1158c7 !default;
+$base-color-blue-7-dark: #0d419d !default;
+$base-color-blue-8-dark: #0c2d6b !default;
+$base-color-blue-9-dark: #051d4d !default;
 
 // Green scale (dark)
-$base-color-green-0-dark: #AFF5B4 !default;
-$base-color-green-1-dark: #7EE787 !default;
-$base-color-green-2-dark: #56D364 !default;
-$base-color-green-3-dark: #3FB950 !default;
-$base-color-green-4-dark: #2EA043 !default;
+$base-color-green-0-dark: #aff5b4 !default;
+$base-color-green-1-dark: #7ee787 !default;
+$base-color-green-2-dark: #56d364 !default;
+$base-color-green-3-dark: #3fb950 !default;
+$base-color-green-4-dark: #2ea043 !default;
 $base-color-green-5-dark: #238636 !default;
-$base-color-green-6-dark: #196C2E !default;
-$base-color-green-7-dark: #0F5323 !default;
-$base-color-green-8-dark: #033A16 !default;
-$base-color-green-9-dark: #04260F !default;
+$base-color-green-6-dark: #196c2e !default;
+$base-color-green-7-dark: #0f5323 !default;
+$base-color-green-8-dark: #033a16 !default;
+$base-color-green-9-dark: #04260f !default;
 
 // Yellow scale (dark)
-$base-color-yellow-0-dark: #F8E3A1 !default;
-$base-color-yellow-1-dark: #F2CC60 !default;
-$base-color-yellow-2-dark: #E3B341 !default;
-$base-color-yellow-3-dark: #D29922 !default;
-$base-color-yellow-4-dark: #BB8009 !default;
-$base-color-yellow-5-dark: #9E6A03 !default;
+$base-color-yellow-0-dark: #f8e3a1 !default;
+$base-color-yellow-1-dark: #f2cc60 !default;
+$base-color-yellow-2-dark: #e3b341 !default;
+$base-color-yellow-3-dark: #d29922 !default;
+$base-color-yellow-4-dark: #bb8009 !default;
+$base-color-yellow-5-dark: #9e6a03 !default;
 $base-color-yellow-6-dark: #845306 !default;
-$base-color-yellow-7-dark: #693E00 !default;
-$base-color-yellow-8-dark: #4B2900 !default;
-$base-color-yellow-9-dark: #341A00 !default;
+$base-color-yellow-7-dark: #693e00 !default;
+$base-color-yellow-8-dark: #4b2900 !default;
+$base-color-yellow-9-dark: #341a00 !default;
 
 // Orange scale (dark)
-$base-color-orange-0-dark: #FFDFB6 !default;
-$base-color-orange-1-dark: #FFC680 !default;
-$base-color-orange-2-dark: #FFA657 !default;
-$base-color-orange-3-dark: #F0883E !default;
-$base-color-orange-4-dark: #DB6D28 !default;
-$base-color-orange-5-dark: #BD561D !default;
-$base-color-orange-6-dark: #9B4215 !default;
-$base-color-orange-7-dark: #762D0A !default;
-$base-color-orange-8-dark: #5A1E02 !default;
-$base-color-orange-9-dark: #3D1300 !default;
+$base-color-orange-0-dark: #ffdfb6 !default;
+$base-color-orange-1-dark: #ffc680 !default;
+$base-color-orange-2-dark: #ffa657 !default;
+$base-color-orange-3-dark: #f0883e !default;
+$base-color-orange-4-dark: #db6d28 !default;
+$base-color-orange-5-dark: #bd561d !default;
+$base-color-orange-6-dark: #9b4215 !default;
+$base-color-orange-7-dark: #762d0a !default;
+$base-color-orange-8-dark: #5a1e02 !default;
+$base-color-orange-9-dark: #3d1300 !default;
 
 // Red scale (dark)
-$base-color-red-0-dark: #FFDCD7 !default;
-$base-color-red-1-dark: #FFC1BA !default;
-$base-color-red-2-dark: #FFA198 !default;
-$base-color-red-3-dark: #FF7B72 !default;
-$base-color-red-4-dark: #F85149 !default;
-$base-color-red-5-dark: #DA3633 !default;
-$base-color-red-6-dark: #B62324 !default;
-$base-color-red-7-dark: #8E1519 !default;
-$base-color-red-8-dark: #67060C !default;
+$base-color-red-0-dark: #ffdcd7 !default;
+$base-color-red-1-dark: #ffc1ba !default;
+$base-color-red-2-dark: #ffa198 !default;
+$base-color-red-3-dark: #ff7b72 !default;
+$base-color-red-4-dark: #f85149 !default;
+$base-color-red-5-dark: #da3633 !default;
+$base-color-red-6-dark: #b62324 !default;
+$base-color-red-7-dark: #8e1519 !default;
+$base-color-red-8-dark: #67060c !default;
 $base-color-red-9-dark: #490202 !default;
 
 // Purple scale (dark)
-$base-color-purple-0-dark: #EDDEFF !default;
-$base-color-purple-1-dark: #E2C5FF !default;
-$base-color-purple-2-dark: #D2A8FF !default;
-$base-color-purple-3-dark: #BE8FFF !default;
-$base-color-purple-4-dark: #AB7DF8 !default;
-$base-color-purple-5-dark: #8957E5 !default;
-$base-color-purple-6-dark: #6E40C9 !default;
+$base-color-purple-0-dark: #eddeff !default;
+$base-color-purple-1-dark: #e2c5ff !default;
+$base-color-purple-2-dark: #d2a8ff !default;
+$base-color-purple-3-dark: #be8fff !default;
+$base-color-purple-4-dark: #ab7df8 !default;
+$base-color-purple-5-dark: #8957e5 !default;
+$base-color-purple-6-dark: #6e40c9 !default;
 $base-color-purple-7-dark: #553098 !default;
-$base-color-purple-8-dark: #3C1E70 !default;
+$base-color-purple-8-dark: #3c1e70 !default;
 $base-color-purple-9-dark: #271052 !default;
 
 // Pink scale (dark)
-$base-color-pink-0-dark: #FFDAEC !default;
-$base-color-pink-1-dark: #FFBEDD !default;
-$base-color-pink-2-dark: #FF9BCE !default;
-$base-color-pink-3-dark: #F778BA !default;
-$base-color-pink-4-dark: #DB61A2 !default;
-$base-color-pink-5-dark: #BF4B8A !default;
-$base-color-pink-6-dark: #9E3670 !default;
-$base-color-pink-7-dark: #7D2457 !default;
-$base-color-pink-8-dark: #5E103E !default;
-$base-color-pink-9-dark: #42062A !default;
+$base-color-pink-0-dark: #ffdaec !default;
+$base-color-pink-1-dark: #ffbedd !default;
+$base-color-pink-2-dark: #ff9bce !default;
+$base-color-pink-3-dark: #f778ba !default;
+$base-color-pink-4-dark: #db61a2 !default;
+$base-color-pink-5-dark: #bf4b8a !default;
+$base-color-pink-6-dark: #9e3670 !default;
+$base-color-pink-7-dark: #7d2457 !default;
+$base-color-pink-8-dark: #5e103e !default;
+$base-color-pink-9-dark: #42062a !default;
 
 // Coral scale (dark)
-$base-color-coral-0-dark: #FFDDD2 !default;
-$base-color-coral-1-dark: #FFC2B2 !default;
-$base-color-coral-2-dark: #FFA28B !default;
-$base-color-coral-3-dark: #F78166 !default;
-$base-color-coral-4-dark: #EA6045 !default;
-$base-color-coral-5-dark: #CF462D !default;
-$base-color-coral-6-dark: #AC3220 !default;
+$base-color-coral-0-dark: #ffddd2 !default;
+$base-color-coral-1-dark: #ffc2b2 !default;
+$base-color-coral-2-dark: #ffa28b !default;
+$base-color-coral-3-dark: #f78166 !default;
+$base-color-coral-4-dark: #ea6045 !default;
+$base-color-coral-5-dark: #cf462d !default;
+$base-color-coral-6-dark: #ac3220 !default;
 $base-color-coral-7-dark: #872012 !default;
-$base-color-coral-8-dark: #640D04 !default;
+$base-color-coral-8-dark: #640d04 !default;
 $base-color-coral-9-dark: #460701 !default;
 
 // Semantic background colors (light mode)
@@ -534,11 +534,11 @@ $background-color-accent-emphasis-light: $base-color-blue-5-light !default;
 
 // Success background colors (light mode)
 $background-color-success-muted-light: $base-color-green-0-light !default;
-$background-color-success-emphasis-light: #1F883D !default;
+$background-color-success-emphasis-light: #1f883d !default;
 
 // Open background colors (light mode)
 $background-color-open-muted-light: $base-color-green-0-light !default;
-$background-color-open-emphasis-light: #1F883D !default;
+$background-color-open-emphasis-light: #1f883d !default;
 
 // Attention background colors (light mode)
 $background-color-attention-muted-light: $base-color-yellow-0-light !default;
@@ -546,11 +546,11 @@ $background-color-attention-emphasis-light: $base-color-yellow-5-light !default;
 
 // Info background colors (light mode)
 $background-color-info-muted-light: $base-color-blue-0-light !default;
-$background-color-info-emphasis-light: #3366FF !default;
+$background-color-info-emphasis-light: #3366ff !default;
 
 // Warning background colors (light mode)
 $background-color-warning-muted-light: $base-color-yellow-0-light !default;
-$background-color-warning-emphasis-light: #FFB020 !default;
+$background-color-warning-emphasis-light: #ffb020 !default;
 
 // Severe background colors (light mode)
 $background-color-severe-muted-light: $base-color-orange-0-light !default;
@@ -613,11 +613,11 @@ $background-color-attention-emphasis-dark: $base-color-yellow-5-dark !default;
 
 // Info background colors (dark mode)
 $background-color-info-muted-dark: rgba($base-color-blue-4-dark, 0.1) !default;
-$background-color-info-emphasis-dark: #3366FF !default;
+$background-color-info-emphasis-dark: #3366ff !default;
 
 // Warning background colors (dark mode)
 $background-color-warning-muted-dark: rgba($base-color-yellow-4-dark, 0.15) !default;
-$background-color-warning-emphasis-dark: #FFB020 !default;
+$background-color-warning-emphasis-dark: #ffb020 !default;
 
 // Severe background colors (dark mode)
 $background-color-severe-muted-dark: rgba($base-color-orange-4-dark, 0.1) !default;
@@ -652,7 +652,7 @@ $background-color-sponsors-emphasis-dark: $base-color-pink-5-dark !default;
 // ============================================================================
 
 // Semantic foreground colors (light mode)
-$foreground-color-default-light: #1F2328 !default;
+$foreground-color-default-light: #1f2328 !default;
 $foreground-color-muted-light: $base-color-neutral-9-light !default;
 $foreground-color-on-emphasis-light: $base-color-neutral-0-light !default;
 $foreground-color-on-inverse-light: $base-color-neutral-0-light !default;
@@ -675,19 +675,19 @@ $foreground-color-open-light: $base-color-green-6-light !default;
 $foreground-color-attention-light: $base-color-yellow-5-light !default;
 
 // Info foreground colors (light mode)
-$foreground-color-info-light: #3366FF !default;
+$foreground-color-info-light: #3366ff !default;
 
 // Warning foreground colors (light mode)
-$foreground-color-warning-light: #FFB020 !default;
+$foreground-color-warning-light: #ffb020 !default;
 
 // Severe foreground colors (light mode)
 $foreground-color-severe-light: $base-color-orange-5-light !default;
 
 // Danger foreground colors (light mode)
-$foreground-color-danger-light: #D1242F !default;
+$foreground-color-danger-light: #d1242f !default;
 
 // Closed foreground colors (light mode)
-$foreground-color-closed-light: #D1242F !default;
+$foreground-color-closed-light: #d1242f !default;
 
 // Draft foreground colors (light mode)
 $foreground-color-draft-light: $base-color-neutral-9-light !default;
@@ -709,11 +709,11 @@ $foreground-color-on-inverse-dark: $base-color-neutral-0-dark !default;
 $foreground-color-white-dark: $base-color-neutral-13-dark !default;
 $foreground-color-black-dark: $base-color-neutral-0-dark !default;
 $foreground-color-disabled-dark: $base-color-neutral-8-dark !default;
-$foreground-color-link-dark: #4493F8 !default;
+$foreground-color-link-dark: #4493f8 !default;
 $foreground-color-neutral-dark: $base-color-neutral-9-dark !default;
 
 // Accent foreground colors (dark mode)
-$foreground-color-accent-dark: #4493F8 !default;
+$foreground-color-accent-dark: #4493f8 !default;
 
 // Success foreground colors (dark mode)
 $foreground-color-success-dark: $base-color-green-3-dark !default;
@@ -725,10 +725,10 @@ $foreground-color-open-dark: $base-color-green-3-dark !default;
 $foreground-color-attention-dark: $base-color-yellow-3-dark !default;
 
 // Info foreground colors (dark mode)
-$foreground-color-info-dark: #3366FF !default;
+$foreground-color-info-dark: #3366ff !default;
 
 // Warning foreground colors (dark mode)
-$foreground-color-warning-dark: #FFB020 !default;
+$foreground-color-warning-dark: #ffb020 !default;
 
 // Severe foreground colors (dark mode)
 $foreground-color-severe-dark: $base-color-orange-4-dark !default;
@@ -785,11 +785,11 @@ $border-color-attention-emphasis-light: $base-color-yellow-5-light !default;
 
 // Info border colors (light mode)
 $border-color-info-muted-light: rgba($base-color-blue-3-light, 0.4) !default;
-$border-color-info-emphasis-light: #3366FF !default;
+$border-color-info-emphasis-light: #3366ff !default;
 
 // Warning border colors (light mode)
 $border-color-warning-muted-light: rgba($base-color-yellow-3-light, 0.4) !default;
-$border-color-warning-emphasis-light: #FFB020 !default;
+$border-color-warning-emphasis-light: #ffb020 !default;
 
 // Severe border colors (light mode)
 $border-color-severe-muted-light: rgba($base-color-orange-3-light, 0.4) !default;
@@ -849,11 +849,11 @@ $border-color-attention-emphasis-dark: $base-color-yellow-5-dark !default;
 
 // Info border colors (dark mode)
 $border-color-info-muted-dark: rgba($base-color-blue-4-dark, 0.4) !default;
-$border-color-info-emphasis-dark: #3366FF !default;
+$border-color-info-emphasis-dark: #3366ff !default;
 
 // Warning border colors (dark mode)
 $border-color-warning-muted-dark: rgba($base-color-yellow-4-dark, 0.4) !default;
-$border-color-warning-emphasis-dark: #FFB020 !default;
+$border-color-warning-emphasis-dark: #ffb020 !default;
 
 // Severe border colors (dark mode)
 $border-color-severe-muted-dark: rgba($base-color-orange-4-dark, 0.4) !default;
@@ -898,140 +898,140 @@ $focus-outline-color-dark: $border-color-accent-emphasis-dark !default;
 // ============================================================================
 
 // Auburn data colors (light mode)
-$data-auburn-color-emphasis-light: #9D615C !default;
-$data-auburn-color-muted-light: #F2E9E9 !default;
+$data-auburn-color-emphasis-light: #9d615c !default;
+$data-auburn-color-muted-light: #f2e9e9 !default;
 
 // Blue data colors (light mode)
-$data-blue-color-emphasis-light: #006EDB !default;
-$data-blue-color-muted-light: #D1F0FF !default;
+$data-blue-color-emphasis-light: #006edb !default;
+$data-blue-color-muted-light: #d1f0ff !default;
 
 // Brown data colors (light mode)
-$data-brown-color-emphasis-light: #856D4C !default;
-$data-brown-color-muted-light: #EEEAE2 !default;
+$data-brown-color-emphasis-light: #856d4c !default;
+$data-brown-color-muted-light: #eeeae2 !default;
 
 // Coral data colors (light mode)
-$data-coral-color-emphasis-light: #D43511 !default;
-$data-coral-color-muted-light: #FFE5DB !default;
+$data-coral-color-emphasis-light: #d43511 !default;
+$data-coral-color-muted-light: #ffe5db !default;
 
 // Gray data colors (light mode)
-$data-gray-color-emphasis-light: #808FA3 !default;
-$data-gray-color-muted-light: #E8ECF2 !default;
+$data-gray-color-emphasis-light: #808fa3 !default;
+$data-gray-color-muted-light: #e8ecf2 !default;
 
 // Green data colors (light mode)
-$data-green-color-emphasis-light: #30A147 !default;
-$data-green-color-muted-light: #CAF7CA !default;
+$data-green-color-emphasis-light: #30a147 !default;
+$data-green-color-muted-light: #caf7ca !default;
 
 // Lemon data colors (light mode)
-$data-lemon-color-emphasis-light: #866E04 !default;
-$data-lemon-color-muted-light: #F7EEA1 !default;
+$data-lemon-color-emphasis-light: #866e04 !default;
+$data-lemon-color-muted-light: #f7eea1 !default;
 
 // Lime data colors (light mode)
-$data-lime-color-emphasis-light: #527A29 !default;
-$data-lime-color-muted-light: #E3F2B5 !default;
+$data-lime-color-emphasis-light: #527a29 !default;
+$data-lime-color-muted-light: #e3f2b5 !default;
 
 // Olive data colors (light mode)
-$data-olive-color-emphasis-light: #64762D !default;
-$data-olive-color-muted-light: #F0F0AD !default;
+$data-olive-color-emphasis-light: #64762d !default;
+$data-olive-color-muted-light: #f0f0ad !default;
 
 // Orange data colors (light mode)
-$data-orange-color-emphasis-light: #EB670F !default;
-$data-orange-color-muted-light: #FFE7D1 !default;
+$data-orange-color-emphasis-light: #eb670f !default;
+$data-orange-color-muted-light: #ffe7d1 !default;
 
 // Pine data colors (light mode)
-$data-pine-color-emphasis-light: #167E53 !default;
-$data-pine-color-muted-light: #BFF8DB !default;
+$data-pine-color-emphasis-light: #167e53 !default;
+$data-pine-color-muted-light: #bff8db !default;
 
 // Pink data colors (light mode)
-$data-pink-color-emphasis-light: #CE2C85 !default;
-$data-pink-color-muted-light: #FFE5F1 !default;
+$data-pink-color-emphasis-light: #ce2c85 !default;
+$data-pink-color-muted-light: #ffe5f1 !default;
 
 // Plum data colors (light mode)
-$data-plum-color-emphasis-light: #A830E8 !default;
-$data-plum-color-muted-light: #F8E5FF !default;
+$data-plum-color-emphasis-light: #a830e8 !default;
+$data-plum-color-muted-light: #f8e5ff !default;
 
 // Purple data colors (light mode)
-$data-purple-color-emphasis-light: #894CEB !default;
-$data-purple-color-muted-light: #F1E5FF !default;
+$data-purple-color-emphasis-light: #894ceb !default;
+$data-purple-color-muted-light: #f1e5ff !default;
 
 // Red data colors (light mode)
-$data-red-color-emphasis-light: #DF0C24 !default;
-$data-red-color-muted-light: #FFE2E0 !default;
+$data-red-color-emphasis-light: #df0c24 !default;
+$data-red-color-muted-light: #ffe2e0 !default;
 
 // Teal data colors (light mode)
-$data-teal-color-emphasis-light: #179B9B !default;
-$data-teal-color-muted-light: #C7F5EF !default;
+$data-teal-color-emphasis-light: #179b9b !default;
+$data-teal-color-muted-light: #c7f5ef !default;
 
 // Yellow data colors (light mode)
-$data-yellow-color-emphasis-light: #B88700 !default;
-$data-yellow-color-muted-light: #FFEC9E !default;
+$data-yellow-color-emphasis-light: #b88700 !default;
+$data-yellow-color-muted-light: #ffec9e !default;
 
 // Auburn data colors (dark mode)
-$data-auburn-color-emphasis-dark: #9D615C !default;
-$data-auburn-color-muted-dark: #F2E9E9 !default;
+$data-auburn-color-emphasis-dark: #9d615c !default;
+$data-auburn-color-muted-dark: #f2e9e9 !default;
 
 // Blue data colors (dark mode)
-$data-blue-color-emphasis-dark: #006EDB !default;
-$data-blue-color-muted-dark: #D1F0FF !default;
+$data-blue-color-emphasis-dark: #006edb !default;
+$data-blue-color-muted-dark: #d1f0ff !default;
 
 // Brown data colors (dark mode)
-$data-brown-color-emphasis-dark: #856D4C !default;
-$data-brown-color-muted-dark: #EEEAE2 !default;
+$data-brown-color-emphasis-dark: #856d4c !default;
+$data-brown-color-muted-dark: #eeeae2 !default;
 
 // Coral data colors (dark mode)
-$data-coral-color-emphasis-dark: #D43511 !default;
-$data-coral-color-muted-dark: #FFE5DB !default;
+$data-coral-color-emphasis-dark: #d43511 !default;
+$data-coral-color-muted-dark: #ffe5db !default;
 
 // Gray data colors (dark mode)
-$data-gray-color-emphasis-dark: #808FA3 !default;
-$data-gray-color-muted-dark: #E8ECF2 !default;
+$data-gray-color-emphasis-dark: #808fa3 !default;
+$data-gray-color-muted-dark: #e8ecf2 !default;
 
 // Green data colors (dark mode)
-$data-green-color-emphasis-dark: #30A147 !default;
-$data-green-color-muted-dark: #CAF7CA !default;
+$data-green-color-emphasis-dark: #30a147 !default;
+$data-green-color-muted-dark: #caf7ca !default;
 
 // Lemon data colors (dark mode)
-$data-lemon-color-emphasis-dark: #866E04 !default;
-$data-lemon-color-muted-dark: #FFF6B8 !default;
+$data-lemon-color-emphasis-dark: #866e04 !default;
+$data-lemon-color-muted-dark: #fff6b8 !default;
 
 // Lime data colors (dark mode)
 $data-lime-color-emphasis-dark: #477225 !default;
-$data-lime-color-muted-dark: #DDF8B5 !default;
+$data-lime-color-muted-dark: #ddf8b5 !default;
 
 // Olive data colors (dark mode)
-$data-olive-color-emphasis-dark: #64762D !default;
-$data-olive-color-muted-dark: #F0F0AD !default;
+$data-olive-color-emphasis-dark: #64762d !default;
+$data-olive-color-muted-dark: #f0f0ad !default;
 
 // Orange data colors (dark mode)
-$data-orange-color-emphasis-dark: #D15802 !default;
-$data-orange-color-muted-dark: #FFD9B2 !default;
+$data-orange-color-emphasis-dark: #d15802 !default;
+$data-orange-color-muted-dark: #ffd9b2 !default;
 
 // Pine data colors (dark mode)
-$data-pine-color-emphasis-dark: #1D6040 !default;
-$data-pine-color-muted-dark: #B8F1DD !default;
+$data-pine-color-emphasis-dark: #1d6040 !default;
+$data-pine-color-muted-dark: #b8f1dd !default;
 
 // Pink data colors (dark mode)
-$data-pink-color-emphasis-dark: #D93380 !default;
-$data-pink-color-muted-dark: #FFDCE5 !default;
+$data-pink-color-emphasis-dark: #d93380 !default;
+$data-pink-color-muted-dark: #ffdce5 !default;
 
 // Plum data colors (dark mode)
-$data-plum-color-emphasis-dark: #A830E8 !default;
-$data-plum-color-muted-dark: #F8E5FF !default;
+$data-plum-color-emphasis-dark: #a830e8 !default;
+$data-plum-color-muted-dark: #f8e5ff !default;
 
 // Purple data colors (dark mode)
-$data-purple-color-emphasis-dark: #8250DF !default;
-$data-purple-color-muted-dark: #FBEFFF !default;
+$data-purple-color-emphasis-dark: #8250df !default;
+$data-purple-color-muted-dark: #fbefff !default;
 
 // Red data colors (dark mode)
-$data-red-color-emphasis-dark: #CF222E !default;
-$data-red-color-muted-dark: #FFEBE9 !default;
+$data-red-color-emphasis-dark: #cf222e !default;
+$data-red-color-muted-dark: #ffebe9 !default;
 
 // Teal data colors (dark mode)
 $data-teal-color-emphasis-dark: #007983 !default;
-$data-teal-color-muted-dark: #C2FFFA !default;
+$data-teal-color-muted-dark: #c2fffa !default;
 
 // Yellow data colors (dark mode)
-$data-yellow-color-emphasis-dark: #B88700 !default;
-$data-yellow-color-muted-dark: #FFEC9E !default;
+$data-yellow-color-emphasis-dark: #b88700 !default;
+$data-yellow-color-muted-dark: #ffec9e !default;
 
 // ============================================================================
 // Overlay Colors
