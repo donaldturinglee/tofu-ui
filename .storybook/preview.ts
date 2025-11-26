@@ -23,6 +23,9 @@ const preview: Preview = {
                 ],
             },
         },
+        docs: {
+            codePanel: true,
+        },
     },
 };
 
