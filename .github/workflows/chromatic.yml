@@ -1,0 +1,25 @@
+name: Chromatic Deployment
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/components/**'
+      - 'src/stories/**'
+      - '.storybook/**'
+
+jobs:
+  chromatic:
+    name: "Run Chromatic"
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: yarn
+      - uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
