@@ -1,4 +1,5 @@
 type ClassValue = string | boolean | null | undefined;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type ClassArgument = ClassValue | ClassValue[] | Record<string, any>;
 
 export const ClassNames = (...classes: ClassArgument[]): string => {
