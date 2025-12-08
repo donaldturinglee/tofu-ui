@@ -39,16 +39,15 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             size = "small",
             radius,
             highContrast,
-            loading = false,
+            isLoading = false,
             children,
             ...rest
         },
         ref,
     ) => {
         const variantClass = `tofu-button-${variant}`;
-        const sizeClass = `tofu-button-size-${size}`;
-        const classes = `tofu-button ${variantClass} ${sizeClass} ${className}`.trim();
-        const isDisabled = !!(disabled || loading);
+        const classes = `tofu-button ${variantClass} ${className}`.trim();
+        const isDisabled = !!(disabled || isLoading);
         const spinnerSize = mapButtonSizeToSpinnerSize(size);
         const containerStyle: React.CSSProperties = {
             position: 'relative' as React.CSSProperties['position'],
@@ -73,7 +72,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         }
 
         const renderInnerContent = () =>
-          loading ? (
+          isLoading ? (
             <>
               <span style={{ display: 'contents', visibility: 'hidden' }} aria-hidden>
                 <span className="btn-label">{children}</span>
@@ -105,6 +104,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 {...rest}
                 data-disabled={isDisabled || undefined}
                 data-radius={typeof radius === 'string' ? radius : undefined}
+                data-size={size}
                 data-intent={intent}
                 data-high-contrast={highContrast || undefined}
                 aria-label={ariaLabel}

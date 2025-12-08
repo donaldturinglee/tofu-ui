@@ -37,7 +37,7 @@
   }
 }
 
-.tofu-button.tofu-button-size-small {
+.tofu-button[data-size="small"] {
   --btn-height: var(--space-5, 28px);
   --btn-padding-x: var(--space-3, 12px);
   --btn-padding-y: var(--space-1, 6px);
@@ -45,14 +45,14 @@
   font-size: var(--font-size-2, 13px);
   line-height: 1;
 }
-.tofu-button.tofu-button-size-medium {
+.tofu-button[data-size="medium"] {
   --btn-height: var(--space-6, 34px);
   --btn-padding-x: var(--space-4, 16px);
   --btn-padding-y: var(--space-2, 8px);
   border-radius: max(var(--radius-2, 6px), var(--radius-full, 9999px));
   font-size: var(--font-size-3, 14px);
 }
-.tofu-button.tofu-button-size-large {
+.tofu-button[data-size="large"] {
   --btn-height: var(--space-7, 40px);
   --btn-padding-x: var(--space-5, 20px);
   --btn-padding-y: var(--space-2, 10px);
