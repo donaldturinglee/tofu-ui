@@ -15,8 +15,8 @@ export const Basic: StoryFn<typeof Button> = () => (
 
 export const LoadingOverlay: StoryFn<typeof Button> = () => (
   <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-    <Button variant="solid" loading>Loading</Button>
-    <Button variant="soft" loading>Loading</Button>
+    <Button variant="solid" isLoading>Loading</Button>
+    <Button variant="soft" isLoading>Loading</Button>
   </div>
 );
 

@@ -15,7 +15,7 @@ type CommonButtonBaseProps = Omit<
     size?: ButtonSize;
     radius?: number | "xs" | "sm" | "md" | "xl" | "full";
     disabled?: boolean;
-    loading?: boolean;
+    isLoading?: boolean;
 };
 
 export type ButtonProps = CommonButtonBaseProps & { children?: React.ReactNode };
