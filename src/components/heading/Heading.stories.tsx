@@ -1,31 +1,27 @@
 import type { StoryFn, Meta } from "@storybook/react";
 import { Heading } from "./Heading";
-import type { HeadingProps } from "./Heading.types";
 
 export default {
     title: "Components/Heading",
     component: Heading,
 } as Meta<typeof Heading>;
 
-export const Default: StoryFn<typeof Heading> = () => (
-    <Heading as="h2" variant="medium">
-        Heading
+export const Default = () => (
+    <Heading as="h1" variant="medium">
+        Default Heading
     </Heading>
 );
 
-export const Playground: StoryFn<HeadingProps> = (args) => <Heading {...args} />;
+export const Playground: StoryFn<typeof Heading> = (args) => (
+    <Heading {...args}>Playground</Heading>
+);
 
 Playground.args = {
-    children: "Heading",
     as: "h2",
     variant: "medium",
 };
 
 Playground.argTypes = {
-    children: {
-        control: "text",
-        description: "Heading content",
-    },
     as: {
         control: {
             type: "select",
@@ -41,6 +37,7 @@ Playground.argTypes = {
         description: "Heading size variant",
     },
     ref: {
+        control: false,
         table: {
             disable: true,
         },

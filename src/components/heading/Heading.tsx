@@ -1,22 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ClassNames } from "../../utilities/classnames";
 import { HeadingProps } from "./Heading.types";
 import "./Heading.scss";
+import { useForwardedRef } from "../../hooks/useForwardedRef";
+import { PolymorphicForwardRef } from "../../utilities/polymorphic";
 
-export const Heading = ({
-    as: Component = "h1",
-    variant = "medium",
-    children,
-    ref,
-    ...props
-}: HeadingProps) => {
-    const classes = ClassNames("tofu-heading");
+function HeadingBase<As extends React.ElementType = "h1">(
+    props: HeadingProps<As>,
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ref: React.ForwardedRef<any>,
+) {
+    const { as: Component = "h1", variant, className, ...rest } = props;
 
-    return (
-        <Component ref={ref} className={classes} data-variant={variant} {...props}>
-            {children}
-        </Component>
-    );
-};
+    const headingRef = useRef<HTMLHeadingElement>(null);
+    useForwardedRef<HTMLHeadingElement>(ref, headingRef);
 
-Heading.displayName = "Heading";
+    const classes = ClassNames("tofu-heading", className);
+
+    return <Component ref={headingRef} data-variant={variant} className={classes} {...rest} />;
+}
+
+HeadingBase.displayName = "Heading";
+
+export const Heading = PolymorphicForwardRef(HeadingBase);
