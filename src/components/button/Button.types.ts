@@ -3,6 +3,7 @@ import React from "react";
 export type ButtonVariant = "primary" | "solid" | "soft" | "surface" | "outline" | "ghost";
 export type ButtonIntent = "success" | "warning" | "danger" | "info";
 export type ButtonSize = "small" | "medium" | "large";
+export type ButtonRadius = number | "xs" | "sm" | "md" | "xl" | "full";
 
 type CommonButtonBaseProps = Omit<
     React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -13,7 +14,7 @@ type CommonButtonBaseProps = Omit<
     variant?: ButtonVariant;
     intent?: ButtonIntent;
     size?: ButtonSize;
-    radius?: number | "xs" | "sm" | "md" | "xl" | "full";
+    radius?: ButtonRadius;
     disabled?: boolean;
     isLoading?: boolean;
 };

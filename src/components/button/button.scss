@@ -20,10 +20,7 @@
     cursor: not-allowed;
     --spinner-opacity: 1;
   }
-}
 
-/* Sizing */
-.tofu-button {
   &:not(.tofu-button-ghost) {
     height: var(--btn-height);
     padding-inline: var(--btn-padding-x);
