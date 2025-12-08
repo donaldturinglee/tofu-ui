@@ -1,0 +1,44 @@
+@use "../../styles/base/typography" as *;
+@use "../../styles/utilities/variables" as *;
+
+.tofu-text {
+    font-family: $font-stack-sans-serif;
+    font-size: $text-body-size-medium;
+    font-weight: $text-body-weight;
+    line-height: $text-body-line-height-medium;
+}
+
+.tofu-text[data-size="small"] {
+    font-size: $text-body-size-small;
+    line-height: $text-body-line-height-small;
+}
+
+.tofu-text[data-size="medium"] {
+    font-size: $text-body-size-medium;
+    line-height: $text-body-line-height-medium;
+}
+
+.tofu-text[data-size="large"] {
+    font-size: $text-body-size-large;
+    line-height: $text-body-line-height-large;
+}
+
+.tofu-text[data-weight="light"] {
+    font-weight: $base-text-weight-light;
+}
+
+.tofu-text[data-weight="normal"] {
+    font-weight: $base-text-weight-normal;
+}
+
+.tofu-text[data-weight="medium"] {
+    font-weight: $base-text-weight-medium;
+}
+
+.tofu-text[data-weight="semibold"] {
+    font-weight: $base-text-weight-semibold;
+}
+
+.tofu-text[data-weight="bold"] {
+    font-weight: $base-text-weight-bold;
+}
