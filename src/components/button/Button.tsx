@@ -1,7 +1,9 @@
 import React from "react";
 import type { ButtonProps } from "./Button.types"
-import { Spinner, SpinnerSize } from "./spinner";
-import "./button.scss";
+
+import "./Button.scss";
+import { Spinner, SpinnerSize } from "../spinner/Spinner";
+import { ClassNames } from "../../utilities/classnames";
 
 const VisuallyHidden: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   <span
@@ -46,7 +48,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         ref,
     ) => {
         const variantClass = `tofu-button-${variant}`;
-        const classes = `tofu-button ${variantClass} ${className}`.trim();
+const classes = ClassNames("tofu-button", variantClass, className);
         const isDisabled = !!(disabled || isLoading);
         const spinnerSize = mapButtonSizeToSpinnerSize(size);
         const containerStyle: React.CSSProperties = {
