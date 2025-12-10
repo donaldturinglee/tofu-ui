@@ -1,9 +1,8 @@
 import React from "react";
-import { ButtonSize } from "./Button.types";
-import "./spinner.scss";
-export type SpinnerSize = ButtonSize;
+import "./Spinner.scss";
+export type SpinnerSize = "small" | "medium" | "large";
 
- const Spinner: React.FC<{ size?: SpinnerSize }> = ({ size = 'small' }) => (
+ export const Spinner: React.FC<{ size?: SpinnerSize }> = ({ size = 'small' }) => (
   <span className={`btn-spinner btn-spinner-size-${size}`}>
     <span className="btn-spinner-leaf" />
     <span className="btn-spinner-leaf" />
@@ -17,4 +16,3 @@ export type SpinnerSize = ButtonSize;
 );
 Spinner.displayName = 'Spinner';
 
-export { Spinner };
