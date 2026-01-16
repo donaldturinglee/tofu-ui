@@ -16,30 +16,6 @@ const config: StorybookConfig = {
             config.resolve.extensions.push(".ts", ".tsx");
         }
 
-        // SASS
-        if (config.module?.rules) {
-            config.module.rules.push({
-                test: /\.s(a|c)ss$/,
-                use: [
-                    "style-loader",
-                    {
-                        loader: "css-loader",
-                        options: {
-                            modules: {
-                                auto: /\.module\.scss$/,
-                            },
-                        },
-                    },
-                    {
-                        loader: "sass-loader",
-                        options: {
-                            // sourceMap: true,
-                        },
-                    },
-                ],
-            });
-        }
-
         return config;
     },
 };

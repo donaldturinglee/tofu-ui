@@ -2,4 +2,4 @@
 export * from "./components";
 
 // Styles
-import "./styles/main.scss";
+import "./styles/main.css";
