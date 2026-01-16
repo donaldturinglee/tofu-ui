@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { ClassNames } from "../../utilities/classnames";
 import { HeadingProps } from "./Heading.types";
-import "./Heading.scss";
+import "./Heading.css";
 import { useForwardedRef } from "../../hooks/useForwardedRef";
 import { PolymorphicForwardRef } from "../../utilities/polymorphic";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import type { ButtonProps } from "./Button.types"
 
-import "./Button.scss";
+import "./Button.css";
 import { Spinner, SpinnerSize } from "../spinner/Spinner";
 import { ClassNames } from "../../utilities/classnames";
 
