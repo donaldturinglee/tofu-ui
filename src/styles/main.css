@@ -1,2 +1,4 @@
 @import "./base/_typography.css";
 @import "./base/_reset.css";
+@import "./utilities/_variables.css";
+@import "./components/main.css";

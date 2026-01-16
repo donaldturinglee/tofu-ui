@@ -1,0 +1,21 @@
+.tofu-heading {
+    font-family: var(--font-stack-sans-serif);
+    font-size: var(--text-title-size-medium);
+    font-weight: var(--base-text-weight-semibold);
+    line-height: var(--text-title-line-height-medium);
+}
+
+.tofu-heading[data-variant="small"] {
+    font-size: var(--text-title-size-small);
+    line-height: var(--text-title-line-height-small);
+}
+
+.tofu-heading[data-variant="medium"] {
+    font-size: var(--text-title-size-medium);
+    line-height: var(--text-title-line-height-medium);
+}
+
+.tofu-heading[data-variant="large"] {
+    font-size: var(--text-title-size-large);
+    line-height: var(--text-title-line-height-large);
+}
