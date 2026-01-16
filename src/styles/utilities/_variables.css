@@ -1,0 +1,790 @@
+﻿:root {
+  /* ========================================================================== */
+  /* Easing */
+  /* ========================================================================== */
+  --base-easing-ease-in: cubic-bezier(0.7, 0.1, 0.75, 0.9);
+  --base-easing-ease-in-out: cubic-bezier(0.6, 0, 0.2, 1);
+  --base-easing-ease-out: cubic-bezier(0.3, 0.8, 0.6, 1);
+  --base-easing-ease-linear: cubic-bezier(0, 0, 1, 1);
+  /* ========================================================================== */
+  /* Timing */
+  /* ========================================================================== */
+  --base-duration-0: 0ms;
+  --base-duration-50: 50ms;
+  --base-duration-100: 100ms;
+  --base-duration-200: 200ms;
+  --base-duration-300: 300ms;
+  --base-duration-400: 400ms;
+  --base-duration-500: 500ms;
+  --base-duration-600: 600ms;
+  --base-duration-700: 700ms;
+  --base-duration-800: 800ms;
+  --base-duration-900: 900ms;
+  --base-duration-1000: 1000ms;
+  /* ========================================================================== */
+  /* Size */
+  /* ========================================================================== */
+  --base-size-2: 2px;
+  --base-size-4: 4px;
+  --base-size-6: 6px;
+  --base-size-8: 8px;
+  --base-size-12: 12px;
+  --base-size-16: 16px;
+  --base-size-20: 20px;
+  --base-size-24: 24px;
+  --base-size-28: 28px;
+  --base-size-32: 32px;
+  --base-size-36: 36px;
+  --base-size-40: 40px;
+  --base-size-44: 44px;
+  --base-size-48: 48px;
+  --base-size-64: 64px;
+  --base-size-80: 80px;
+  --base-size-96: 96px;
+  --base-size-112: 112px;
+  --base-size-128: 128px;
+  /* ========================================================================== */
+  /* Border Width */
+  /* ========================================================================== */
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+  --border-width-thicker: 4px;
+  --border-width-default: 1px;
+  /* ========================================================================== */
+  /* Box Shadow */
+  /* ========================================================================== */
+  --border-box-shadow-thin: inset 0 0 0 1px;
+  --border-box-shadow-thick: inset 0 0 0 2px;
+  --border-box-shadow-thicker: inset 0 0 0 4px;
+  /* ========================================================================== */
+  /* Border Radius */
+  /* ========================================================================== */
+  --border-radius-small: 3px;
+  --border-radius-medium: 6px;
+  --border-radius-large: 12px;
+  --border-radius-full: 9999px;
+  --border-radius-default: 6px;
+  /* ========================================================================== */
+  /* Outline */
+  /* ========================================================================== */
+  --outline-focus-offset: -2px;
+  --outline-focus-width: 2px;
+  /* ========================================================================== */
+  /* Breakpoint */
+  /* ========================================================================== */
+  --breakpoint-xsmall: 320px;
+  --breakpoint-small: 544px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 1012px;
+  --breakpoint-xlarge: 1280px;
+  --breakpoint-xxlarge: 1400px;
+  /* ========================================================================== */
+  /* Shadow */
+  /* ========================================================================== */
+  /* Shadow - Inset */
+  --shadow-inset: inset 0px 1px 0px 0px rgba(31, 35, 40, 0.04);
+  --shadow-inset-dark: inset 0px 1px 0px 0px rgba(1, 4, 9, 0.24);
+  /* Shadow - Resting */
+  --shadow-resting-xsmall: 0px 1px 1px 0px rgba(31, 35, 40, 0.06);
+  --shadow-resting-xsmall-dark: 0px 1px 1px 0px rgba(1, 4, 9, 0.8);
+  --shadow-resting-small: 0px 1px 1px 0px rgba(31, 35, 40, 0.06), 0px 1px 3px 0px rgba(31, 35, 40, 0.06);
+  --shadow-resting-small-dark: 0px 1px 1px 0px rgba(1, 4, 9, 0.6), 0px 1px 3px 0px rgba(1, 4, 9, 0.6);
+  --shadow-resting-medium: 0px 1px 1px 0px rgba(37, 41, 46, 0.1), 0px 3px 6px 0px rgba(37, 41, 46, 0.12);
+  --shadow-resting-medium-dark: 0px 1px 1px 0px rgba(1, 4, 9, 0.4), 0px 3px 6px 0px rgba(1, 4, 9, 0.8);
+  /* Shadow - Floating */
+  --shadow-floating-small: 0px 0px 0px 1px rgba(209, 217, 224, 0.5), 0px 6px 12px -3px rgba(37, 41, 46, 0.04), 0px 6px 18px 0px rgba(37, 41, 46, 0.12);
+  --shadow-floating-small-dark: 0px 0px 0px 1px rgb(61, 68, 77), 0px 6px 12px -3px rgba(1, 4, 9, 0.4), 0px 6px 18px 0px rgba(1, 4, 9, 0.4);
+  --shadow-floating-medium: 0px 0px 0px 1px rgba(209, 217, 224, 0), 0px 8px 16px -4px rgba(37, 41, 46, 0.08), 0px 4px 32px -4px rgba(37, 41, 46, 0.08), 0px 24px 48px -12px rgba(37, 41, 46, 0.08), 0px 48px 96px -24px rgba(37, 41, 46, 0.08);
+  --shadow-floating-medium-dark: 0px 0px 0px 1px rgb(61, 68, 77), 0px 8px 16px -4px rgba(1, 4, 9, 0.4), 0px 4px 32px -4px rgba(1, 4, 9, 0.4), 0px 24px 48px -12px rgba(1, 4, 9, 0.4), 0px 48px 96px -24px rgba(1, 4, 9, 0.4);
+  --shadow-floating-large: 0px 0px 0px 1px rgba(209, 217, 224, 0), 0px 40px 80px 0px rgba(37, 41, 46, 0.24);
+  --shadow-floating-large-dark: 0px 0px 0px 1px rgb(61, 68, 77), 0px 24px 48px 0px rgb(1, 4, 9);
+  --shadow-floating-xlarge: 0px 0px 0px 1px rgba(209, 217, 224, 0), 0px 56px 112px 0px rgba(37, 41, 46, 0.32);
+  --shadow-floating-xlarge-dark: 0px 0px 0px 1px rgb(61, 68, 77), 0px 32px 64px 0px rgb(1, 4, 9);
+  --shadow-floating-legacy: 0px 6px 12px -3px rgba(37, 41, 46, 0.04), 0px 6px 18px 0px rgba(37, 41, 46, 0.12);
+  --shadow-floating-legacy-dark: 0px 6px 12px -3px rgba(1, 4, 9, 0.4), 0px 6px 18px 0px rgba(1, 4, 9, 0.4);
+  /* ========================================================================== */
+  /* Control */
+  /* ========================================================================== */
+  /* Control - Min Target */
+  --control-min-target-auto: 16px;
+  --control-min-target-fine: 16px;
+  --control-min-target-coarse: 44px;
+  /* Control - XSmall */
+  --control-xsmall-size: 24px;
+  --control-xsmall-line-box-height: 20px;
+  --control-xsmall-padding-block: 2px;
+  --control-xsmall-padding-inline-condensed: 4px;
+  --control-xsmall-padding-inline-normal: 8px;
+  --control-xsmall-padding-inline-spacious: 12px;
+  --control-xsmall-gap: 4px;
+  /* Control - Small */
+  --control-small-size: 28px;
+  --control-small-line-box-height: 20px;
+  --control-small-padding-block: 4px;
+  --control-small-padding-inline-condensed: 8px;
+  --control-small-padding-inline-normal: 12px;
+  --control-small-gap: 4px;
+  /* Control - Medium */
+  --control-medium-size: 32px;
+  --control-medium-line-box-height: 20px;
+  --control-medium-padding-block: 6px;
+  --control-medium-padding-inline-condensed: 8px;
+  --control-medium-padding-inline-normal: 12px;
+  --control-medium-padding-inline-spacious: 16px;
+  --control-medium-gap: 8px;
+  /* Control - Large */
+  --control-large-size: 40px;
+  --control-large-line-box-height: 20px;
+  --control-large-padding-block: 10px;
+  --control-large-padding-inline-normal: 12px;
+  --control-large-padding-inline-spacious: 16px;
+  --control-large-gap: 8px;
+  /* Control - XLarge */
+  --control-xlarge-size: 48px;
+  --control-xlarge-line-box-height: 20px;
+  --control-xlarge-padding-block: 14px;
+  --control-xlarge-padding-inline-normal: 12px;
+  --control-xlarge-padding-inline-spacious: 16px;
+  --control-xlarge-gap: 8px;
+  /* ========================================================================== */
+  /* Spinner */
+  /* ========================================================================== */
+  --spinner-stroke-width-default: 2px;
+  --spinner-size-small: 16px;
+  --spinner-size-medium: 32px;
+  --spinner-size-large: 64px;
+  /* ========================================================================== */
+  /* Stack */
+  /* ========================================================================== */
+  --stack-padding-condensed: 8px;
+  --stack-padding-normal: 16px;
+  --stack-padding-spacious: 24px;
+  --stack-gap-condensed: 8px;
+  --stack-gap-normal: 16px;
+  --stack-gap-spacious: 24px;
+  /* ========================================================================== */
+  /* Control Stack */
+  /* ========================================================================== */
+  /* Control Stack - Small */
+  --control-stack-small-gap-auto: 8px;
+  --control-stack-small-gap-condensed: 8px;
+  --control-stack-small-gap-spacious: 16px;
+  /* Control Stack - Medium */
+  --control-stack-medium-gap-auto: 8px;
+  --control-stack-medium-gap-condensed: 8px;
+  --control-stack-medium-gap-spacious: 12px;
+  /* Control Stack - Large */
+  --control-stack-large-gap-auto: 8px;
+  --control-stack-large-gap-condensed: 8px;
+  --control-stack-large-gap-spacious: 12px;
+  /* ========================================================================== */
+  /* Overlay */
+  /* ========================================================================== */
+  --overlay-width-xsmall: 192px;
+  --overlay-width-small: 320px;
+  --overlay-width-medium: 480px;
+  --overlay-width-large: 640px;
+  --overlay-width-xlarge: 960px;
+  --overlay-height-small: 256px;
+  --overlay-height-medium: 320px;
+  --overlay-height-large: 432px;
+  --overlay-height-xlarge: 600px;
+  --overlay-padding-normal: 16px;
+  --overlay-padding-condensed: 8px;
+  --overlay-padding-block-condensed: 4px;
+  --overlay-padding-block-normal: 12px;
+  --overlay-border-radius: 6px;
+  --overlay-offset: 4px;
+  /* ========================================================================== */
+  /* Viewport Range */
+  /* ========================================================================== */
+  --viewport-range-narrow: (max-width: calc(768px - 0.02px));
+  --viewport-range-narrow-landscape: (max-width: calc(1012px - 0.02px)) and (max-height: calc(544px - 0.02px)) and (orientation: landscape);
+  --viewport-range-regular: (min-width: 768px);
+  --viewport-range-wide: (min-width: 1400px);
+  --viewport-range-portrait: (orientation: portrait);
+  --viewport-range-landscape: (orientation: landscape);
+  /* ========================================================================== */
+  /* Light Mode Colors */
+  /* ========================================================================== */
+  /* Base colors (light) */
+  --base-color-black-light: #1f2328;
+  --base-color-white-light: #ffffff;
+  --base-color-transparent-light: rgba(255, 255, 255, 0);
+  --base-color-inset-light: #ffffff;
+  /* Neutral scale (light) */
+  --base-color-neutral-0-light: #ffffff;
+  --base-color-neutral-1-light: #f6f8fa;
+  --base-color-neutral-2-light: #eff2f5;
+  --base-color-neutral-3-light: #e6eaef;
+  --base-color-neutral-4-light: #e0e6eb;
+  --base-color-neutral-5-light: #dae0e7;
+  --base-color-neutral-6-light: #d1d9e0;
+  --base-color-neutral-7-light: #c8d1da;
+  --base-color-neutral-8-light: #818b98;
+  --base-color-neutral-9-light: #59636e;
+  --base-color-neutral-10-light: #454c54;
+  --base-color-neutral-11-light: #393f46;
+  --base-color-neutral-12-light: #25292e;
+  --base-color-neutral-13-light: #1f2328;
+  /* Blue scale (light) */
+  --base-color-blue-0-light: #ddf4ff;
+  --base-color-blue-1-light: #b6e3ff;
+  --base-color-blue-2-light: #80ccff;
+  --base-color-blue-3-light: #54aeff;
+  --base-color-blue-4-light: #218bff;
+  --base-color-blue-5-light: #0969da;
+  --base-color-blue-6-light: #0550ae;
+  --base-color-blue-7-light: #033d8b;
+  --base-color-blue-8-light: #0a3069;
+  --base-color-blue-9-light: #002155;
+  /* Green scale (light) */
+  --base-color-green-0-light: #dafbe1;
+  --base-color-green-1-light: #aceebb;
+  --base-color-green-2-light: #6fdd8b;
+  --base-color-green-3-light: #4ac26b;
+  --base-color-green-4-light: #2da44e;
+  --base-color-green-5-light: #1a7f37;
+  --base-color-green-6-light: #116329;
+  --base-color-green-7-light: #044f1e;
+  --base-color-green-8-light: #003d16;
+  --base-color-green-9-light: #002d11;
+  /* Yellow scale (light) */
+  --base-color-yellow-0-light: #fff8c5;
+  --base-color-yellow-1-light: #fae17d;
+  --base-color-yellow-2-light: #eac54f;
+  --base-color-yellow-3-light: #d4a72c;
+  --base-color-yellow-4-light: #bf8700;
+  --base-color-yellow-5-light: #9a6700;
+  --base-color-yellow-6-light: #7d4e00;
+  --base-color-yellow-7-light: #633c01;
+  --base-color-yellow-8-light: #4d2d00;
+  --base-color-yellow-9-light: #3b2300;
+  /* Orange scale (light) */
+  --base-color-orange-0-light: #fff1e5;
+  --base-color-orange-1-light: #ffd8b5;
+  --base-color-orange-2-light: #ffb77c;
+  --base-color-orange-3-light: #fb8f44;
+  --base-color-orange-4-light: #e16f24;
+  --base-color-orange-5-light: #bc4c00;
+  --base-color-orange-6-light: #953800;
+  --base-color-orange-7-light: #762c00;
+  --base-color-orange-8-light: #5c2200;
+  --base-color-orange-9-light: #471700;
+  /* Red scale (light) */
+  --base-color-red-0-light: #ffebe9;
+  --base-color-red-1-light: #ffcecb;
+  --base-color-red-2-light: #ffaba8;
+  --base-color-red-3-light: #ff8182;
+  --base-color-red-4-light: #fa4549;
+  --base-color-red-5-light: #cf222e;
+  --base-color-red-6-light: #a40e26;
+  --base-color-red-7-light: #82071e;
+  --base-color-red-8-light: #660018;
+  --base-color-red-9-light: #4c0014;
+  /* Purple scale (light) */
+  --base-color-purple-0-light: #fbefff;
+  --base-color-purple-1-light: #ecd8ff;
+  --base-color-purple-2-light: #d8b9ff;
+  --base-color-purple-3-light: #c297ff;
+  --base-color-purple-4-light: #a475f9;
+  --base-color-purple-5-light: #8250df;
+  --base-color-purple-6-light: #6639ba;
+  --base-color-purple-7-light: #512a97;
+  --base-color-purple-8-light: #3e1f79;
+  --base-color-purple-9-light: #2e1461;
+  /* Pink scale (light) */
+  --base-color-pink-0-light: #ffeff7;
+  --base-color-pink-1-light: #ffd3eb;
+  --base-color-pink-2-light: #ffadda;
+  --base-color-pink-3-light: #ff80c8;
+  --base-color-pink-4-light: #e85aad;
+  --base-color-pink-5-light: #bf3989;
+  --base-color-pink-6-light: #99286e;
+  --base-color-pink-7-light: #772057;
+  --base-color-pink-8-light: #611347;
+  --base-color-pink-9-light: #4d0336;
+  /* Coral scale (light) */
+  --base-color-coral-0-light: #fff0eb;
+  --base-color-coral-1-light: #ffd6cc;
+  --base-color-coral-2-light: #ffb4a1;
+  --base-color-coral-3-light: #fd8c73;
+  --base-color-coral-4-light: #ec6547;
+  --base-color-coral-5-light: #c4432b;
+  --base-color-coral-6-light: #9e2f1c;
+  --base-color-coral-7-light: #801f0f;
+  --base-color-coral-8-light: #691105;
+  --base-color-coral-9-light: #510901;
+  /* ========================================================================== */
+  /* Dark mode colors */
+  /* ========================================================================== */
+  /* Base colors (dark) */
+  --base-color-black-dark: #010409;
+  --base-color-white-dark: #ffffff;
+  --base-color-transparent-dark: rgba(0, 0, 0, 0);
+  --base-color-inset-dark: #010409;
+  /* Neutral scale (dark) */
+  --base-color-neutral-0-dark: #010409;
+  --base-color-neutral-1-dark: #0d1117;
+  --base-color-neutral-2-dark: #151b23;
+  --base-color-neutral-3-dark: #212830;
+  --base-color-neutral-4-dark: #262c36;
+  --base-color-neutral-5-dark: #2a313c;
+  --base-color-neutral-6-dark: #2f3742;
+  --base-color-neutral-7-dark: #3d444d;
+  --base-color-neutral-8-dark: #656c76;
+  --base-color-neutral-9-dark: #9198a1;
+  --base-color-neutral-10-dark: #b7bdc8;
+  --base-color-neutral-11-dark: #d1d7e0;
+  --base-color-neutral-12-dark: #f0f6fc;
+  --base-color-neutral-13-dark: #ffffff;
+  /* Blue scale (dark) */
+  --base-color-blue-0-dark: #cae8ff;
+  --base-color-blue-1-dark: #a5d6ff;
+  --base-color-blue-2-dark: #79c0ff;
+  --base-color-blue-3-dark: #58a6ff;
+  --base-color-blue-4-dark: #388bfd;
+  --base-color-blue-5-dark: #1f6feb;
+  --base-color-blue-6-dark: #1158c7;
+  --base-color-blue-7-dark: #0d419d;
+  --base-color-blue-8-dark: #0c2d6b;
+  --base-color-blue-9-dark: #051d4d;
+  /* Green scale (dark) */
+  --base-color-green-0-dark: #aff5b4;
+  --base-color-green-1-dark: #7ee787;
+  --base-color-green-2-dark: #56d364;
+  --base-color-green-3-dark: #3fb950;
+  --base-color-green-4-dark: #2ea043;
+  --base-color-green-5-dark: #238636;
+  --base-color-green-6-dark: #196c2e;
+  --base-color-green-7-dark: #0f5323;
+  --base-color-green-8-dark: #033a16;
+  --base-color-green-9-dark: #04260f;
+  /* Yellow scale (dark) */
+  --base-color-yellow-0-dark: #f8e3a1;
+  --base-color-yellow-1-dark: #f2cc60;
+  --base-color-yellow-2-dark: #e3b341;
+  --base-color-yellow-3-dark: #d29922;
+  --base-color-yellow-4-dark: #bb8009;
+  --base-color-yellow-5-dark: #9e6a03;
+  --base-color-yellow-6-dark: #845306;
+  --base-color-yellow-7-dark: #693e00;
+  --base-color-yellow-8-dark: #4b2900;
+  --base-color-yellow-9-dark: #341a00;
+  /* Orange scale (dark) */
+  --base-color-orange-0-dark: #ffdfb6;
+  --base-color-orange-1-dark: #ffc680;
+  --base-color-orange-2-dark: #ffa657;
+  --base-color-orange-3-dark: #f0883e;
+  --base-color-orange-4-dark: #db6d28;
+  --base-color-orange-5-dark: #bd561d;
+  --base-color-orange-6-dark: #9b4215;
+  --base-color-orange-7-dark: #762d0a;
+  --base-color-orange-8-dark: #5a1e02;
+  --base-color-orange-9-dark: #3d1300;
+  /* Red scale (dark) */
+  --base-color-red-0-dark: #ffdcd7;
+  --base-color-red-1-dark: #ffc1ba;
+  --base-color-red-2-dark: #ffa198;
+  --base-color-red-3-dark: #ff7b72;
+  --base-color-red-4-dark: #f85149;
+  --base-color-red-5-dark: #da3633;
+  --base-color-red-6-dark: #b62324;
+  --base-color-red-7-dark: #8e1519;
+  --base-color-red-8-dark: #67060c;
+  --base-color-red-9-dark: #490202;
+  /* Purple scale (dark) */
+  --base-color-purple-0-dark: #eddeff;
+  --base-color-purple-1-dark: #e2c5ff;
+  --base-color-purple-2-dark: #d2a8ff;
+  --base-color-purple-3-dark: #be8fff;
+  --base-color-purple-4-dark: #ab7df8;
+  --base-color-purple-5-dark: #8957e5;
+  --base-color-purple-6-dark: #6e40c9;
+  --base-color-purple-7-dark: #553098;
+  --base-color-purple-8-dark: #3c1e70;
+  --base-color-purple-9-dark: #271052;
+  /* Pink scale (dark) */
+  --base-color-pink-0-dark: #ffdaec;
+  --base-color-pink-1-dark: #ffbedd;
+  --base-color-pink-2-dark: #ff9bce;
+  --base-color-pink-3-dark: #f778ba;
+  --base-color-pink-4-dark: #db61a2;
+  --base-color-pink-5-dark: #bf4b8a;
+  --base-color-pink-6-dark: #9e3670;
+  --base-color-pink-7-dark: #7d2457;
+  --base-color-pink-8-dark: #5e103e;
+  --base-color-pink-9-dark: #42062a;
+  /* Coral scale (dark) */
+  --base-color-coral-0-dark: #ffddd2;
+  --base-color-coral-1-dark: #ffc2b2;
+  --base-color-coral-2-dark: #ffa28b;
+  --base-color-coral-3-dark: #f78166;
+  --base-color-coral-4-dark: #ea6045;
+  --base-color-coral-5-dark: #cf462d;
+  --base-color-coral-6-dark: #ac3220;
+  --base-color-coral-7-dark: #872012;
+  --base-color-coral-8-dark: #640d04;
+  --base-color-coral-9-dark: #460701;
+  /* Semantic background colors (light mode) */
+  --background-color-default-light: #ffffff;
+  --background-color-muted-light: #f6f8fa;
+  --background-color-inset-light: #f6f8fa;
+  --background-color-emphasis-light: #25292e;
+  --background-color-inverse-light: #25292e;
+  --background-color-white-light: #ffffff;
+  --background-color-black-light: #1f2328;
+  --background-color-disabled-light: #eff2f5;
+  --background-color-transparent-light: rgba(255, 255, 255, 0);
+  /* Neutral background colors (light mode) */
+  --background-color-neutral-muted-light: rgba(129, 139, 152, 0.12);
+  --background-color-neutral-emphasis-light: #59636e;
+  /* Accent background colors (light mode) */
+  --background-color-accent-muted-light: #ddf4ff;
+  --background-color-accent-emphasis-light: #0969da;
+  /* Success background colors (light mode) */
+  --background-color-success-muted-light: #dafbe1;
+  --background-color-success-emphasis-light: #1f883d;
+  /* Open background colors (light mode) */
+  --background-color-open-muted-light: #dafbe1;
+  --background-color-open-emphasis-light: #1f883d;
+  /* Attention background colors (light mode) */
+  --background-color-attention-muted-light: #fff8c5;
+  --background-color-attention-emphasis-light: #9a6700;
+  /* Info background colors (light mode) */
+  --background-color-info-muted-light: #ddf4ff;
+  --background-color-info-emphasis-light: #3366ff;
+  /* Warning background colors (light mode) */
+  --background-color-warning-muted-light: #fff8c5;
+  --background-color-warning-emphasis-light: #ffb020;
+  /* Severe background colors (light mode) */
+  --background-color-severe-muted-light: #fff1e5;
+  --background-color-severe-emphasis-light: #bc4c00;
+  /* Danger background colors (light mode) */
+  --background-color-danger-muted-light: #ffebe9;
+  --background-color-danger-emphasis-light: #cf222e;
+  /* Closed background colors (light mode) */
+  --background-color-closed-muted-light: #ffebe9;
+  --background-color-closed-emphasis-light: #cf222e;
+  /* Draft background colors (light mode) */
+  --background-color-draft-muted-light: rgba(129, 139, 152, 0.12);
+  --background-color-draft-emphasis-light: #59636e;
+  /* Done background colors (light mode) */
+  --background-color-done-muted-light: #fbefff;
+  --background-color-done-emphasis-light: #8250df;
+  /* Upsell background colors (light mode) */
+  --background-color-upsell-muted-light: #fbefff;
+  --background-color-upsell-emphasis-light: #8250df;
+  /* Sponsors background colors (light mode) */
+  --background-color-sponsors-muted-light: #ffeff7;
+  --background-color-sponsors-emphasis-light: #bf3989;
+  /* Semantic background colors (dark mode) */
+  --background-color-default-dark: #0d1117;
+  --background-color-muted-dark: #151b23;
+  --background-color-inset-dark: #010409;
+  --background-color-emphasis-dark: #3d444d;
+  --background-color-inverse-dark: #ffffff;
+  --background-color-white-dark: #ffffff;
+  --background-color-black-dark: #010409;
+  --background-color-disabled-dark: #212830;
+  --background-color-transparent-dark: rgba(0, 0, 0, 0);
+  /* Neutral background colors (dark mode) */
+  --background-color-neutral-muted-dark: rgba(101, 108, 118, 0.2);
+  --background-color-neutral-emphasis-dark: #656c76;
+  /* Accent background colors (dark mode) */
+  --background-color-accent-muted-dark: rgba(56, 139, 253, 0.1);
+  --background-color-accent-emphasis-dark: #1f6feb;
+  /* Success background colors (dark mode) */
+  --background-color-success-muted-dark: rgba(46, 160, 67, 0.15);
+  --background-color-success-emphasis-dark: #238636;
+  /* Open background colors (dark mode) */
+  --background-color-open-muted-dark: rgba(46, 160, 67, 0.15);
+  --background-color-open-emphasis-dark: #238636;
+  /* Attention background colors (dark mode) */
+  --background-color-attention-muted-dark: rgba(187, 128, 9, 0.15);
+  --background-color-attention-emphasis-dark: #9e6a03;
+  /* Info background colors (dark mode) */
+  --background-color-info-muted-dark: rgba(56, 139, 253, 0.1);
+  --background-color-info-emphasis-dark: #3366ff;
+  /* Warning background colors (dark mode) */
+  --background-color-warning-muted-dark: rgba(187, 128, 9, 0.15);
+  --background-color-warning-emphasis-dark: #ffb020;
+  /* Severe background colors (dark mode) */
+  --background-color-severe-muted-dark: rgba(219, 109, 40, 0.1);
+  --background-color-severe-emphasis-dark: #bd561d;
+  /* Danger background colors (dark mode) */
+  --background-color-danger-muted-dark: rgba(248, 81, 73, 0.1);
+  --background-color-danger-emphasis-dark: #da3633;
+  /* Closed background colors (dark mode) */
+  --background-color-closed-muted-dark: rgba(248, 81, 73, 0.1);
+  --background-color-closed-emphasis-dark: #da3633;
+  /* Draft background colors (dark mode) */
+  --background-color-draft-muted-dark: rgba(101, 108, 118, 0.2);
+  --background-color-draft-emphasis-dark: #656c76;
+  /* Done background colors (dark mode) */
+  --background-color-done-muted-dark: rgba(171, 125, 248, 0.15);
+  --background-color-done-emphasis-dark: #8957e5;
+  /* Upsell background colors (dark mode) */
+  --background-color-upsell-muted-dark: rgba(171, 125, 248, 0.15);
+  --background-color-upsell-emphasis-dark: #8957e5;
+  /* Sponsors background colors (dark mode) */
+  --background-color-sponsors-muted-dark: rgba(219, 97, 162, 0.1);
+  --background-color-sponsors-emphasis-dark: #bf4b8a;
+  /* ========================================================================== */
+  /* Foreground Colors */
+  /* ========================================================================== */
+  /* Semantic foreground colors (light mode) */
+  --foreground-color-default-light: #1f2328;
+  --foreground-color-muted-light: #59636e;
+  --foreground-color-on-emphasis-light: #ffffff;
+  --foreground-color-on-inverse-light: #ffffff;
+  --foreground-color-white-light: #ffffff;
+  --foreground-color-black-light: #1f2328;
+  --foreground-color-disabled-light: #818b98;
+  --foreground-color-link-light: #0969da;
+  --foreground-color-neutral-light: #59636e;
+  /* Accent foreground colors (light mode) */
+  --foreground-color-accent-light: #0969da;
+  /* Success foreground colors (light mode) */
+  --foreground-color-success-light: #1a7f37;
+  /* Open foreground colors (light mode) */
+  --foreground-color-open-light: #116329;
+  /* Attention foreground colors (light mode) */
+  --foreground-color-attention-light: #9a6700;
+  /* Info foreground colors (light mode) */
+  --foreground-color-info-light: #3366ff;
+  --foreground-color-warning-light: #ffb020;
+  --foreground-color-severe-light: #bc4c00;
+  --foreground-color-danger-light: #d1242f;
+  --foreground-color-closed-light: #d1242f;
+  --foreground-color-draft-light: #59636e;
+  --foreground-color-done-light: #8250df;
+  --foreground-color-upsell-light: #8250df;
+  --foreground-color-sponsors-light: #bf3989;
+  --foreground-color-default-dark: #f0f6fc;
+  --foreground-color-muted-dark: #9198a1;
+  --foreground-color-on-emphasis-dark: #ffffff;
+  --foreground-color-on-inverse-dark: #010409;
+  --foreground-color-white-dark: #ffffff;
+  --foreground-color-black-dark: #010409;
+  --foreground-color-disabled-dark: #656c76;
+  --foreground-color-link-dark: #4493f8;
+  --foreground-color-neutral-dark: #9198a1;
+  --foreground-color-accent-dark: #4493f8;
+  --foreground-color-success-dark: #3fb950;
+  --foreground-color-open-dark: #3fb950;
+  --foreground-color-attention-dark: #d29922;
+  --foreground-color-info-dark: #3366ff;
+  --foreground-color-warning-dark: #ffb020;
+  --foreground-color-severe-dark: #db6d28;
+  --foreground-color-danger-dark: #f85149;
+  --foreground-color-closed-dark: #f85149;
+  --foreground-color-draft-dark: #9198a1;
+  --foreground-color-done-dark: #ab7df8;
+  --foreground-color-upsell-dark: #ab7df8;
+  --foreground-color-sponsors-dark: #db61a2;
+  /* ========================================================================== */
+  /* Border Colors */
+  /* ========================================================================== */
+  /* Semantic border colors (light mode) */
+  --border-color-default-light: #d1d9e0;
+  --border-color-muted-light: rgba(209, 217, 224, 0.7);
+  --border-color-emphasis-light: #818b98;
+  --border-color-disabled-light: rgba(129, 139, 152, 0.1);
+  --border-color-transparent-light: rgba(255, 255, 255, 0);
+  --border-color-translucent-light: rgba(31, 35, 40, 0.15);
+  /* Neutral border colors (light mode) */
+  --border-color-neutral-muted-light: rgba(209, 217, 224, 0.7);
+  --border-color-neutral-emphasis-light: #59636e;
+  /* Accent border colors (light mode) */
+  --border-color-accent-muted-light: rgba(84, 174, 255, 0.4);
+  --border-color-accent-emphasis-light: #0969da;
+  /* Success border colors (light mode) */
+  --border-color-success-muted-light: rgba(74, 194, 107, 0.4);
+  --border-color-success-emphasis-light: #1a7f37;
+  /* Open border colors (light mode) */
+  --border-color-open-muted-light: rgba(74, 194, 107, 0.4);
+  --border-color-open-emphasis-light: #1a7f37;
+  /* Attention border colors (light mode) */
+  --border-color-attention-muted-light: rgba(212, 167, 44, 0.4);
+  --border-color-attention-emphasis-light: #9a6700;
+  /* Info border colors (light mode) */
+  --border-color-info-muted-light: rgba(84, 174, 255, 0.4);
+  --border-color-info-emphasis-light: #3366ff;
+  /* Warning border colors (light mode) */
+  --border-color-warning-muted-light: rgba(212, 167, 44, 0.4);
+  --border-color-warning-emphasis-light: #ffb020;
+  /* Severe border colors (light mode) */
+  --border-color-severe-muted-light: rgba(251, 143, 68, 0.4);
+  --border-color-severe-emphasis-light: #bc4c00;
+  /* Danger border colors (light mode) */
+  --border-color-danger-muted-light: rgba(255, 129, 130, 0.4);
+  --border-color-danger-emphasis-light: #cf222e;
+  --border-color-closed-muted-light: rgba(255, 129, 130, 0.4);
+  --border-color-closed-emphasis-light: #cf222e;
+  --border-color-draft-muted-light: rgba(209, 217, 224, 0.7);
+  --border-color-draft-emphasis-light: #59636e;
+  --border-color-done-muted-light: rgba(194, 151, 255, 0.4);
+  --border-color-done-emphasis-light: #8250df;
+  --border-color-upsell-muted-light: rgba(194, 151, 255, 0.4);
+  --border-color-upsell-emphasis-light: #8250df;
+  --border-color-sponsors-muted-light: rgba(255, 128, 200, 0.4);
+  --border-color-sponsors-emphasis-light: #bf3989;
+  --border-color-default-dark: #3d444d;
+  --border-color-muted-dark: rgba(61, 68, 77, 0.7);
+  --border-color-emphasis-dark: #656c76;
+  --border-color-disabled-dark: rgba(101, 108, 118, 0.1);
+  --border-color-transparent-dark: rgba(0, 0, 0, 0);
+  --border-color-translucent-dark: rgba(255, 255, 255, 0.15);
+  --border-color-neutral-muted-dark: rgba(61, 68, 77, 0.7);
+  --border-color-neutral-emphasis-dark: #656c76;
+  --border-color-accent-muted-dark: rgba(56, 139, 253, 0.4);
+  --border-color-accent-emphasis-dark: #1f6feb;
+  --border-color-success-muted-dark: rgba(46, 160, 67, 0.4);
+  --border-color-success-emphasis-dark: #238636;
+  --border-color-open-muted-dark: rgba(46, 160, 67, 0.4);
+  --border-color-open-emphasis-dark: #238636;
+  --border-color-attention-muted-dark: rgba(187, 128, 9, 0.4);
+  --border-color-attention-emphasis-dark: #9e6a03;
+  --border-color-info-muted-dark: rgba(56, 139, 253, 0.4);
+  --border-color-info-emphasis-dark: #3366ff;
+  --border-color-warning-muted-dark: rgba(187, 128, 9, 0.4);
+  --border-color-warning-emphasis-dark: #ffb020;
+  --border-color-severe-muted-dark: rgba(219, 109, 40, 0.4);
+  --border-color-severe-emphasis-dark: #bd561d;
+  --border-color-danger-muted-dark: rgba(248, 81, 73, 0.4);
+  --border-color-danger-emphasis-dark: #da3633;
+  --border-color-closed-muted-dark: rgba(248, 81, 73, 0.4);
+  --border-color-closed-emphasis-dark: #da3633;
+  --border-color-draft-muted-dark: rgba(61, 68, 77, 0.7);
+  --border-color-draft-emphasis-dark: #656c76;
+  --border-color-done-muted-dark: rgba(171, 125, 248, 0.4);
+  --border-color-done-emphasis-dark: #8957e5;
+  --border-color-upsell-muted-dark: rgba(171, 125, 248, 0.4);
+  --border-color-upsell-emphasis-dark: #8957e5;
+  --border-color-sponsors-muted-dark: rgba(219, 97, 162, 0.4);
+  --border-color-sponsors-emphasis-dark: #bf4b8a;
+  /* ========================================================================== */
+  /* Focus Colors */
+  /* ========================================================================== */
+  /* Focus colors (light mode) */
+  --focus-outline-color-light: #0969da;
+  /* Focus colors (dark mode) */
+  --focus-outline-color-dark: #1f6feb;
+  /* ========================================================================== */
+  /* Data Visualization Colors */
+  /* ========================================================================== */
+  /* Auburn data colors (light mode) */
+  --data-auburn-color-emphasis-light: #9d615c;
+  --data-auburn-color-muted-light: #f2e9e9;
+  /* Blue data colors (light mode) */
+  --data-blue-color-emphasis-light: #006edb;
+  --data-blue-color-muted-light: #d1f0ff;
+  /* Brown data colors (light mode) */
+  --data-brown-color-emphasis-light: #856d4c;
+  --data-brown-color-muted-light: #eeeae2;
+  /* Coral data colors (light mode) */
+  --data-coral-color-emphasis-light: #d43511;
+  --data-coral-color-muted-light: #ffe5db;
+  /* Gray data colors (light mode) */
+  --data-gray-color-emphasis-light: #808fa3;
+  --data-gray-color-muted-light: #e8ecf2;
+  /* Green data colors (light mode) */
+  --data-green-color-emphasis-light: #30a147;
+  --data-green-color-muted-light: #caf7ca;
+  /* Lemon data colors (light mode) */
+  --data-lemon-color-emphasis-light: #866e04;
+  --data-lemon-color-muted-light: #f7eea1;
+  /* Lime data colors (light mode) */
+  --data-lime-color-emphasis-light: #527a29;
+  --data-lime-color-muted-light: #e3f2b5;
+  /* Olive data colors (light mode) */
+  --data-olive-color-emphasis-light: #64762d;
+  --data-olive-color-muted-light: #f0f0ad;
+  /* Orange data colors (light mode) */
+  --data-orange-color-emphasis-light: #eb670f;
+  --data-orange-color-muted-light: #ffe7d1;
+  /* Pine data colors (light mode) */
+  --data-pine-color-emphasis-light: #167e53;
+  --data-pine-color-muted-light: #bff8db;
+  /* Pink data colors (light mode) */
+  --data-pink-color-emphasis-light: #ce2c85;
+  --data-pink-color-muted-light: #ffe5f1;
+  /* Plum data colors (light mode) */
+  --data-plum-color-emphasis-light: #a830e8;
+  --data-plum-color-muted-light: #f8e5ff;
+  /* Purple data colors (light mode) */
+  --data-purple-color-emphasis-light: #894ceb;
+  --data-purple-color-muted-light: #f1e5ff;
+  /* Red data colors (light mode) */
+  --data-red-color-emphasis-light: #df0c24;
+  --data-red-color-muted-light: #ffe2e0;
+  /* Teal data colors (light mode) */
+  --data-teal-color-emphasis-light: #179b9b;
+  --data-teal-color-muted-light: #c7f5ef;
+  /* Yellow data colors (light mode) */
+  --data-yellow-color-emphasis-light: #b88700;
+  --data-yellow-color-muted-light: #ffec9e;
+  /* Auburn data colors (dark mode) */
+  --data-auburn-color-emphasis-dark: #9d615c;
+  --data-auburn-color-muted-dark: #f2e9e9;
+  /* Blue data colors (dark mode) */
+  --data-blue-color-emphasis-dark: #006edb;
+  --data-blue-color-muted-dark: #d1f0ff;
+  /* Brown data colors (dark mode) */
+  --data-brown-color-emphasis-dark: #856d4c;
+  --data-brown-color-muted-dark: #eeeae2;
+  /* Coral data colors (dark mode) */
+  --data-coral-color-emphasis-dark: #d43511;
+  --data-coral-color-muted-dark: #ffe5db;
+  /* Gray data colors (dark mode) */
+  --data-gray-color-emphasis-dark: #808fa3;
+  --data-gray-color-muted-dark: #e8ecf2;
+  /* Green data colors (dark mode) */
+  --data-green-color-emphasis-dark: #30a147;
+  --data-green-color-muted-dark: #caf7ca;
+  /* Lemon data colors (dark mode) */
+  --data-lemon-color-emphasis-dark: #866e04;
+  --data-lemon-color-muted-dark: #fff6b8;
+  /* Lime data colors (dark mode) */
+  --data-lime-color-emphasis-dark: #477225;
+  --data-lime-color-muted-dark: #ddf8b5;
+  /* Olive data colors (dark mode) */
+  --data-olive-color-emphasis-dark: #64762d;
+  --data-olive-color-muted-dark: #f0f0ad;
+  /* Orange data colors (dark mode) */
+  --data-orange-color-emphasis-dark: #d15802;
+  --data-orange-color-muted-dark: #ffd9b2;
+  /* Pine data colors (dark mode) */
+  --data-pine-color-emphasis-dark: #1d6040;
+  --data-pine-color-muted-dark: #b8f1dd;
+  /* Pink data colors (dark mode) */
+  --data-pink-color-emphasis-dark: #d93380;
+  --data-pink-color-muted-dark: #ffdce5;
+  /* Plum data colors (dark mode) */
+  --data-plum-color-emphasis-dark: #a830e8;
+  --data-plum-color-muted-dark: #f8e5ff;
+  /* Purple data colors (dark mode) */
+  --data-purple-color-emphasis-dark: #8250df;
+  --data-purple-color-muted-dark: #fbefff;
+  /* Red data colors (dark mode) */
+  --data-red-color-emphasis-dark: #cf222e;
+  --data-red-color-muted-dark: #ffebe9;
+  /* Teal data colors (dark mode) */
+  --data-teal-color-emphasis-dark: #007983;
+  --data-teal-color-muted-dark: #c2fffa;
+  /* Yellow data colors (dark mode) */
+  --data-yellow-color-emphasis-dark: #b88700;
+  --data-yellow-color-muted-dark: #ffec9e;
+  /* ========================================================================== */
+  /* Overlay Colors */
+  /* ========================================================================== */
+  /* Overlay colors (light mode) */
+  --overlay-background-color-light: #ffffff;
+  --overlay-border-color-light: rgba(209, 217, 224, 0.5);
+  --overlay-backdrop-background-color-light: rgba(200, 209, 218, 0.4);
+  /* Overlay colors (dark mode) */
+  --overlay-background-color-dark: #010409;
+  --overlay-border-color-dark: rgba(61, 68, 77, 0.7);
+  --overlay-backdrop-background-color-dark: rgba(33, 40, 48, 0.4);
+}

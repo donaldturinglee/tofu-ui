@@ -1,0 +1,117 @@
+/* ============================================================================
+ */
+/* Text Weight
+ */
+/* ============================================================================
+ */
+
+:root {
+    --base-text-weight-light: 300;
+    --base-text-weight-normal: 400;
+    --base-text-weight-medium: 500;
+    --base-text-weight-semibold: 600;
+    --base-text-weight-bold: 700;
+
+    /* ============================================================================
+     */
+    /* Font Stack
+     */
+    /* ============================================================================
+     */
+
+    --font-stack-system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-stack-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+        Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-stack-sans-serif-display: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-stack-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
+
+    /* ============================================================================
+     */
+    /* Text Display
+     */
+    /* ============================================================================
+     */
+
+    --text-display-size: 40px;
+    --text-display-line-height: 1.4;
+    --text-display-line-box-height: 1.4;
+    --text-display-weight: var(--base-text-weight-medium);
+
+    /* ============================================================================
+     */
+    /* Text Title
+     */
+    /* ============================================================================
+     */
+
+    --text-title-size-large: 32px;
+    --text-title-size-medium: 20px;
+    --text-title-size-small: 16px;
+    --text-title-line-height-large: 1.5;
+    --text-title-line-height-medium: 1.6;
+    --text-title-line-height-small: 1.5;
+    --text-title-weight-large: var(--base-text-weight-semibold);
+    --text-title-weight-medium: var(--base-text-weight-semibold);
+    --text-title-weight-small: var(--base-text-weight-semibold);
+
+    /* ============================================================================
+     */
+    /* Text Subtitle
+     */
+    /* ============================================================================
+     */
+
+    --text-subtitle-size: 20px;
+    --text-subtitle-line-height: 1.6;
+    --text-subtitle-weight: var(--base-text-weight-normal);
+
+    /* ============================================================================
+     */
+    /* Text Body
+     */
+    /* ============================================================================
+     */
+
+    --text-body-size-large: 16px;
+    --text-body-size-medium: 14px;
+    --text-body-size-small: 12px;
+    --text-body-line-height-large: 1.5;
+    --text-body-line-height-medium: 1.4285;
+    --text-body-line-height-small: 1.6666;
+    --text-body-weight: var(--base-text-weight-normal);
+
+    /* ============================================================================
+     */
+    /* Text Caption
+     */
+    /* ============================================================================
+     */
+
+    --text-caption-size: 12px;
+    --text-caption-line-height: 1.3333;
+    --text-caption-weight: var(--base-text-weight-normal);
+
+    /* ============================================================================
+     */
+    /* Text Code Block
+     */
+    /* ============================================================================
+     */
+
+    --text-code-block-size: 13px;
+    --text-code-block-line-height: 1.5385;
+    --text-code-block-weight: var(--base-text-weight-normal);
+
+    /* ============================================================================
+     */
+    /* Text Code Inline
+     */
+    /* ============================================================================
+     */
+
+    --text-code-inline-size: 0.9285em;
+    --text-code-inline-weight: var(--base-text-weight-normal);
+}

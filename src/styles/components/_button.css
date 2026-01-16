@@ -1,0 +1,40 @@
+/* ============================================================================
+ */
+/* Primary Button
+ */
+/* ============================================================================
+ */
+
+:root {
+    --button-primary-background-color-active: #033d8b;
+    --button-primary-background-color-disabled: #b6e3ff;
+    --button-primary-background-color-hover: #0550ae;
+    --button-primary-background-color-rest: #0969da;
+    --button-primary-border-color-active: rgba(31, 35, 40, 0.15);
+    --button-primary-border-color-disabled: #b6e3ff;
+    --button-primary-border-color-hover: rgba(31, 35, 40, 0.15);
+    --button-primary-border-color-rest: rgba(31, 35, 40, 0.15);
+    --button-primary-foreground-color-disabled: rgba(255, 255, 255, 0.8);
+    --button-primary-foreground-color-rest: #ffffff;
+    --button-primary-icon-color-rest: rgba(255, 255, 255, 0.8);
+    --button-primary-shadow-selected: inset 0px 1px 0px 0px rgba(31, 35, 40, 0.3);
+
+    /* ============================================================================
+     */
+    /* Default Button
+     */
+    /* ============================================================================
+     */
+
+    --button-default-background-color-active: #e6eaef;
+    --button-default-background-color-disabled: #eff2f5;
+    --button-default-background-color-hover: #eff2f5;
+    --button-default-background-color-rest: #f6f8fa;
+    --button-default-background-color-selected: #e6eaef;
+    --button-default-border-color-active: #d1d9e0;
+    --button-default-border-color-disabled: rgba(129, 139, 152, 0.1);
+    --button-default-border-color-hover: #d1d9e0;
+    --button-default-border-color-rest: #d1d9e0;
+    --button-default-foreground-color-rest: #25292e;
+    --button-default-shadow-resting: 0px 1px 0px 0px rgba(31, 35, 40, 0.04);
+}
