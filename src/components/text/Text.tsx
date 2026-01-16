@@ -1,7 +1,6 @@
 import React, { useRef, type ForwardedRef } from "react";
 import { ClassNames } from "../../utilities/classnames";
 import { TextProps } from "./Text.types";
-import "./Text.css";
 import { useForwardedRef } from "../../hooks/useForwardedRef";
 import { PolymorphicForwardRef } from "../../utilities/polymorphic";
 

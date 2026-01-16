@@ -1,5 +1,4 @@
 import React from "react";
-import "./Spinner.css";
 export type SpinnerSize = "small" | "medium" | "large";
 
  export const Spinner: React.FC<{ size?: SpinnerSize }> = ({ size = 'small' }) => (
