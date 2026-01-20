@@ -25,8 +25,8 @@ const VisuallyHidden: React.FC<{ children?: React.ReactNode }> = ({ children }) 
 const mapButtonSizeToSpinnerSize = (size: "small" | "medium" | "large"): SpinnerSize => size;
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    (
-        {
+    (props, ref) => {
+        const {
             "aria-label": ariaLabel,
             "aria-labelledby": ariaLabelledBy,
             tabIndex,
@@ -34,19 +34,18 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             disabled,
             id,
             style,
-            variant = "solid",
-            intent = "info",
+            variant = "default",
+            intent,
             size = "small",
             radius,
             highContrast,
             isLoading = false,
             children,
             ...rest
-        },
-        ref,
-    ) => {
+        } = props;
+
         const variantClass = `tofu-button-${variant}`;
-const classes = ClassNames("tofu-button", variantClass, className);
+        const classes = ClassNames("tofu-button", variantClass, className);
         const isDisabled = !!(disabled || isLoading);
         const spinnerSize = mapButtonSizeToSpinnerSize(size);
         const containerStyle: React.CSSProperties = {
