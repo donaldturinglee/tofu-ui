@@ -1,7 +1,7 @@
 import React from "react";
 import type { ButtonProps } from "./Button.types"
 import { Spinner, SpinnerSize } from "../spinner/Spinner";
-import { ClassNames } from "../../utilities/classnames";
+import { ClassNames, parseSizeFromClassName} from "../../utilities/classnames";
 
 const VisuallyHidden: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
   <span
@@ -25,8 +25,8 @@ const VisuallyHidden: React.FC<{ children?: React.ReactNode }> = ({ children }) 
 const mapButtonSizeToSpinnerSize = (size: "small" | "medium" | "large"): SpinnerSize => size;
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    (props, ref) => {
-        const {
+    (
+        {
             "aria-label": ariaLabel,
             "aria-labelledby": ariaLabelledBy,
             tabIndex,
@@ -34,15 +34,17 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             disabled,
             id,
             style,
-            variant = "default",
-            intent,
+            variant = "solid",
+            intent = "info",
             size = "small",
             radius,
             highContrast,
             isLoading = false,
             children,
             ...rest
-        } = props;
+        },
+        ref,
+    ) => {
 
         const variantClass = `tofu-button-${variant}`;
         const classes = ClassNames("tofu-button", variantClass, className);
@@ -52,25 +54,16 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
             position: 'relative' as React.CSSProperties['position'],
             ...(style as React.CSSProperties || {}),
         };
-        const tokens = String(className).split(/\s+/).filter(Boolean);
-        const parseSize = (prefix: 'w' | 'h') => {
-            for (const t of tokens) {
-                const m1 = t.match(new RegExp(`^${prefix}-\\[(.+)\\]$`));
-                if (m1) return m1[1];
-                const m2 = t.match(new RegExp(`^${prefix}-(\\d+(?:\\.\\d+)?)$`));
-                if (m2) return `${m2[1]}px`;
-            }
-            return undefined;
-        };
-        const w = parseSize('w');
-        const h = parseSize('h');
+
+        const w = parseSizeFromClassName(className, "w");
+        const h = parseSizeFromClassName(className, "h");
         if (w) containerStyle.width = w;
         if (h) containerStyle.height = h;
         if (typeof radius === 'number') {
             containerStyle.borderRadius = radius as number;
         }
 
-        const renderInnerContent = () =>
+        const renderContent = () =>
           isLoading ? (
             <>
               <span style={{ display: 'contents', visibility: 'hidden' }} aria-hidden>
@@ -115,7 +108,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 id={id}
                 style={containerStyle}
             >
-              {renderInnerContent()}
+              {renderContent()}
             </button>
         );
     },
