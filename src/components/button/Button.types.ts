@@ -1,26 +1,23 @@
-import React from "react";
+import { ComponentPropsWithRef, ElementType, MouseEventHandler, ReactNode, Ref } from "react";
+import { BaseProps } from "../../types/component";
 
-export type ButtonVariant = "default" | "primary" | "solid" | "soft" | "surface" | "outline" | "ghost";
+export type ButtonVariant = "default" | "primary" | "secondary" | "outline" | "invisible";
+
 export type ButtonIntent = "success" | "warning" | "danger" | "info";
 export type ButtonSize = "small" | "medium" | "large";
-export type ButtonRadius = number | "xs" | "sm" | "md" | "xl" | "full";
-
-type CommonButtonBaseProps = Omit<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    "type" | "color"
-> & {
-    highContrast?: boolean;
-    className?: string;
+export type ButtonShape = "square" | "round" | "circle";
+export interface ButtonProps extends BaseProps, Omit<ComponentPropsWithRef<"button">, "onClick"> {
+    as?: ElementType;
     variant?: ButtonVariant;
     intent?: ButtonIntent;
     size?: ButtonSize;
-    radius?: ButtonRadius;
+    shape?: ButtonShape;
     disabled?: boolean;
-    isLoading?: boolean;
-};
-
-export type ButtonProps = CommonButtonBaseProps & { children?: React.ReactNode };
-
-export type Button = React.ForwardRefExoticComponent<
-    ButtonProps & React.RefAttributes<HTMLButtonElement>
->;
+    leadingVisual?: ReactNode;
+    trailingVisual?: ReactNode;
+    onClick?: MouseEventHandler<HTMLButtonElement>;
+    inactive?: boolean;
+    loding?: boolean;
+    block?: boolean;
+    ref?: Ref<HTMLButtonElement>;
+}
