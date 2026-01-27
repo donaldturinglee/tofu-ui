@@ -35,23 +35,7 @@ export interface IconProps extends React.SVGAttributes<SVGSVGElement> {
      */
     size?: number;
     /**
-     * Vertical alignment of the icon
-     */
-    verticalAlign?:
-        | "baseline"
-        | "sub"
-        | "super"
-        | "text-top"
-        | "text-bottom"
-        | "middle"
-        | "top"
-        | "bottom";
-    /**
      * Icon title for accessibility
      */
     title?: string;
 }
-
-export type Icon = React.ForwardRefExoticComponent<IconProps & React.RefAttributes<SVGSVGElement>>;
-
-export declare const AccessibilityIcon: Icon;
