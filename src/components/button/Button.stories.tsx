@@ -1,5 +1,6 @@
 import type { StoryFn, Meta } from "@storybook/react";
 import { Button } from "./Button";
+import { AddIcon, ArrowRightIcon } from "../icon";
 
 export default {
   title: "Components/Button",
@@ -18,6 +19,7 @@ export const Default: StoryFn<typeof Button> = () => (
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Variants</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+        <Button size="medium" radius="sm">Default</Button>
         <Button variant="primary" size="medium" radius="sm">Primary</Button>
         <Button variant="solid" size="medium" radius="sm">Solid</Button>
         <Button variant="soft" size="medium" radius="sm">Soft</Button>
@@ -70,6 +72,29 @@ export const Default: StoryFn<typeof Button> = () => (
         <Button variant="solid" size="medium" radius="full">Radius full</Button>
       </div>
     </div>
+
+    <div>
+      <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Block & Visuals</h3>
+      <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+        <Button leadingVisual={<AddIcon size={16} />} variant="solid">Leading</Button>
+        <Button trailingVisual={<ArrowRightIcon size={16} />} variant="outline">Trailing</Button>
+        <Button
+          leadingVisual={<AddIcon size={16} />}
+          trailingVisual={<ArrowRightIcon size={16} />}
+          variant="soft"
+        >
+          Both
+        </Button>
+        <Button leadingVisual={<AddIcon size={16} />} aria-label="Add" variant="ghost" />
+      </div>
+
+      <div style={{ display: "grid", gap: "1rem", width: 320, marginTop: "0.75rem" }}>
+        <Button block variant="solid">Block Button</Button>
+        <Button block variant="outline" leadingVisual={<AddIcon size={16} />}>
+          Block With Icon
+        </Button>
+      </div>
+    </div>
   </div>
 );
 
@@ -86,7 +111,7 @@ Playground.parameters = {
 
 Playground.args = {
   children: <span>Button</span>,
-  variant: "solid",
+  variant: "default",
   intent: "info",
   size: "medium",
   radius: "sm",
@@ -100,7 +125,7 @@ Playground.argTypes = {
   children: { control: { type: "text" } },
   variant: {
     control: { type: "select" },
-    options: ["primary", "solid", "soft", "surface", "outline", "ghost"],
+    options: ["default", "primary", "solid", "soft", "surface", "outline", "ghost"],
   },
   intent: {
     control: { type: "select" },
@@ -114,6 +139,9 @@ Playground.argTypes = {
     control: { type: "select" },
     options: ["xs", "sm", "md", "xl", "full"],
   },
+  block: { control: { type: "boolean" } },
+  leadingVisual: { control: false },
+  trailingVisual: { control: false },
   highContrast: { control: { type: "boolean" } },
   disabled: { control: { type: "boolean" } },
   isLoading: { control: { type: "boolean" } },
