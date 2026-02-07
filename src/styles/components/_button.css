@@ -71,6 +71,22 @@
   --button-accent-disabled-fg-mix: 70%;
 }
 
+.tofu-button[data-block] {
+  width: 100%;
+}
+
+.tofu-button__inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-content-gap);
+}
+
+.tofu-button__visual {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
 .tofu-button[data-intent="info"] {
   --button-accent-5: var(--base-color-blue-5-light);
   --button-accent-6: var(--base-color-blue-6-light);
@@ -118,6 +134,7 @@
   --button-height: var(--space-5, 28px);
   --button-padding-x: var(--space-3, 12px);
   --button-padding-y: var(--space-1, 6px);
+  --button-content-gap: var(--space-1, 6px);
   border-radius: max(var(--radius-1, 4px), var(--radius-full, 9999px));
   font-size: var(--font-size-2, 13px);
   line-height: 1;
@@ -127,6 +144,7 @@
   --button-height: var(--space-6, 34px);
   --button-padding-x: var(--space-4, 16px);
   --button-padding-y: var(--space-2, 8px);
+  --button-content-gap: var(--space-2, 8px);
   border-radius: max(var(--radius-2, 6px), var(--radius-full, 9999px));
   font-size: var(--font-size-3, 14px);
 }
@@ -135,6 +153,7 @@
   --button-height: var(--space-7, 40px);
   --button-padding-x: var(--space-5, 20px);
   --button-padding-y: var(--space-2, 10px);
+  --button-content-gap: var(--space-2, 8px);
   border-radius: max(var(--radius-3, 8px), var(--radius-full, 9999px));
   font-size: var(--font-size-4, 16px);
 }

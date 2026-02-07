@@ -24,32 +24,32 @@ const VisuallyHidden: React.FC<{ children?: React.ReactNode }> = ({ children }) 
 
 const mapButtonSizeToSpinnerSize = (size: "small" | "medium" | "large"): SpinnerSize => size;
 
-export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    (
-        {
-            "aria-label": ariaLabel,
-            "aria-labelledby": ariaLabelledBy,
-            tabIndex,
-            className = "",
-            disabled,
-            id,
-            style,
-            variant = "solid",
-            intent = "info",
-            size = "small",
-            radius,
-            highContrast,
-            isLoading = false,
-            children,
-            ...rest
-        },
-        ref,
-    ) => {
+export function Button({
+        ref: buttonRef,
+        "aria-label": ariaLabel,
+        tabIndex,
+        className = "",
+        disabled,
+        id,
+        style,
+        variant = "solid",
+        intent = "info",
+        size = "small",
+        radius,
+        highContrast,
+        isLoading = false,
+        block = false,
+        leadingVisual,
+        trailingVisual,
+        children,
+        ...rest
+    }: ButtonProps) {
 
         const variantClass = `tofu-button-${variant}`;
         const classes = ClassNames("tofu-button", variantClass, className);
         const isDisabled = !!(disabled || isLoading);
         const spinnerSize = mapButtonSizeToSpinnerSize(size);
+        const styleWidth = (style as React.CSSProperties | undefined)?.width;
         const containerStyle: React.CSSProperties = {
             position: 'relative' as React.CSSProperties['position'],
             ...(style as React.CSSProperties || {}),
@@ -59,17 +59,35 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         const h = parseSizeFromClassName(className, "h");
         if (w) containerStyle.width = w;
         if (h) containerStyle.height = h;
+
+        const shouldBlock = block && !w && styleWidth == null;
+
         if (typeof radius === 'number') {
             containerStyle.borderRadius = radius as number;
         }
+
+        const renderVisual = (visual: React.ReactNode) =>
+          visual != null ? (
+            <span aria-hidden className="tofu-button__visual">
+              {visual}
+            </span>
+          ) : null;
+
+        const renderInner = () => (
+          <span className="tofu-button__inner">
+            {renderVisual(leadingVisual)}
+            {children != null ? <span className="button-label">{children}</span> : null}
+            {renderVisual(trailingVisual)}
+          </span>
+        );
 
         const renderContent = () =>
           isLoading ? (
             <>
               <span style={{ display: 'contents', visibility: 'hidden' }} aria-hidden>
-                <span className="btn-label">{children}</span>
+                {renderInner()}
               </span>
-              <VisuallyHidden>{children}</VisuallyHidden>
+              <VisuallyHidden>{ariaLabel ?? children}</VisuallyHidden>
               <span
                 style={{
                   position: 'absolute',
@@ -83,24 +101,22 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               </span>
             </>
           ) : (
-            <>
-              <span className="btn-label">{children}</span>
-            </>
+            renderInner()
           );
 
 
 
         return (
             <button
-                ref={ref}
+                ref={buttonRef}
                 {...rest}
                 data-disabled={isDisabled || undefined}
                 data-radius={typeof radius === 'string' ? radius : undefined}
                 data-size={size}
                 data-intent={intent}
                 data-high-contrast={highContrast || undefined}
+                data-block={shouldBlock || undefined}
                 aria-label={ariaLabel}
-                aria-labelledby={ariaLabelledBy}
                 aria-disabled={isDisabled}
                 tabIndex={tabIndex}
                 className={classes}
@@ -111,7 +127,6 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
               {renderContent()}
             </button>
         );
-    },
-);
+}
 
 Button.displayName = "Button";
