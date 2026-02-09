@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import type { StoryFn } from "@storybook/react";
 import { Button } from "./Button";
 import { AddIcon, ArrowRightIcon } from "../icon";
@@ -28,6 +29,19 @@ export const Inactive: StoryFn<typeof Button> = () => (
     <Button variant="ghost" shape="round" inactive>Inactive</Button>
   </div>
 );
+
+export const RefFocus: StoryFn<typeof Button> = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  return (
+    <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+      <Button ref={buttonRef} variant="solid" shape="round">Ref Target</Button>
+      <Button variant="outline" shape="round" onClick={() => buttonRef.current?.focus()}>
+        Focus Target
+      </Button>
+    </div>
+  );
+};
 
 export const Visuals: StoryFn<typeof Button> = () => (
   <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>

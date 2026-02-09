@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import type { StoryFn, Meta } from "@storybook/react";
 import { Button } from "./Button";
 import { AddIcon, ArrowRightIcon } from "../icon";
@@ -13,6 +14,24 @@ export default {
     }
   }
 } as Meta<typeof Button>;
+
+const RefExample = () => {
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  return (
+    <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
+      <Button ref={buttonRef} variant="solid" size="medium" shape="round">Ref Target</Button>
+      <Button
+        variant="outline"
+        size="medium"
+        shape="round"
+        onClick={() => buttonRef.current?.focus()}
+      >
+        Focus Target
+      </Button>
+    </div>
+  );
+};
 
 export const Default: StoryFn<typeof Button> = () => (
   <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem" }}>
@@ -67,6 +86,11 @@ export const Default: StoryFn<typeof Button> = () => (
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
         <Button variant="soft" size="medium" shape="round" isLoading>Loading</Button>
       </div>
+    </div>
+
+    <div>
+      <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Ref</h3>
+      <RefExample />
     </div>
 
     <div>
