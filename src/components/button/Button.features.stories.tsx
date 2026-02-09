@@ -8,9 +8,9 @@ export default {
 
 export const Basic: StoryFn<typeof Button> = () => (
   <div style={{ display: "flex", gap: "1rem" }}>
-    <Button>Default</Button>
-    <Button variant="outline">Outline</Button>
-    <Button variant="ghost">Ghost</Button>
+    <Button shape="round">Default</Button>
+    <Button variant="outline" shape="round">Outline</Button>
+    <Button variant="ghost" shape="round">Ghost</Button>
   </div>
 );
 
@@ -21,20 +21,30 @@ export const LoadingOverlay: StoryFn<typeof Button> = () => (
   </div>
 );
 
+export const Inactive: StoryFn<typeof Button> = () => (
+  <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+    <Button variant="solid" shape="round" inactive>Inactive</Button>
+    <Button variant="outline" shape="round" inactive>Inactive</Button>
+    <Button variant="ghost" shape="round" inactive>Inactive</Button>
+  </div>
+);
+
 export const Visuals: StoryFn<typeof Button> = () => (
   <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
-    <Button leadingVisual={<AddIcon size={16} />} variant="solid">Create</Button>
-    <Button trailingVisual={<ArrowRightIcon size={16} />} variant="outline">Next</Button>
+    <Button leadingVisual={<AddIcon size={16} />} variant="solid" shape="round">Create</Button>
+    <Button trailingVisual={<ArrowRightIcon size={16} />} variant="outline" shape="round">Next</Button>
     <Button
       leadingVisual={<AddIcon size={16} />}
       trailingVisual={<ArrowRightIcon size={16} />}
       variant="soft"
+      shape="round"
     >
       Both
     </Button>
     <Button
       leadingVisual={<AddIcon size={16} />}
       variant="solid"
+      shape="round"
       isLoading
     >
       Loading
@@ -44,15 +54,15 @@ export const Visuals: StoryFn<typeof Button> = () => (
 
 export const Block: StoryFn<typeof Button> = () => (
   <div style={{ display: "grid", gap: "1rem", width: 320 }}>
-    <Button block variant="solid">Block Button</Button>
-    <Button block variant="outline" leadingVisual={<AddIcon size={16} />}>
+    <Button block variant="solid" shape="round">Block Button</Button>
+    <Button block variant="outline" shape="round" leadingVisual={<AddIcon size={16} />}>
       Block With Icon
     </Button>
   </div>
 );
 
 export const AsChildLink: StoryFn<typeof Button> = () => (
-  <Button variant="solid">
+  <Button variant="solid" shape="round">
     <a href="#" onClick={(e) => e.preventDefault()}>Link Button</a>
   </Button>
 );

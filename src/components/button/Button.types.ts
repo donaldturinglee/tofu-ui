@@ -4,7 +4,6 @@ export type ButtonShape = "square" | "round" | "circle";
 export type ButtonVariant = "default" | "primary" | "solid" | "soft" | "surface" | "outline" | "ghost";
 export type ButtonIntent = "success" | "warning" | "danger" | "info";
 export type ButtonSize = "small" | "medium" | "large";
-export type ButtonRadius = number | "xs" | "sm" | "md" | "xl" | "full";
 
 type NativeButtonProps = Omit<
     React.ComponentPropsWithRef<"button">,
@@ -17,7 +16,6 @@ type ButtonStyleProps = {
     variant?: ButtonVariant;
     intent?: ButtonIntent;
     size?: ButtonSize;
-    radius?: ButtonRadius;
     disabled?: boolean;
     isLoading?: boolean;
     block?: boolean;

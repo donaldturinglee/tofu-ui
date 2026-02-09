@@ -19,57 +19,62 @@ export const Default: StoryFn<typeof Button> = () => (
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Variants</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
-        <Button size="medium" radius="sm">Default</Button>
-        <Button variant="primary" size="medium" radius="sm">Primary</Button>
-        <Button variant="solid" size="medium" radius="sm">Solid</Button>
-        <Button variant="soft" size="medium" radius="sm">Soft</Button>
-        <Button variant="surface" size="medium" radius="sm">Surface</Button>
-        <Button variant="outline" size="medium" radius="sm">Outline</Button>
-        <Button variant="ghost" size="medium" radius="sm">Ghost</Button>
+        <Button size="medium" shape="round">Default</Button>
+        <Button variant="primary" size="medium" shape="round">Primary</Button>
+        <Button variant="solid" size="medium" shape="round">Solid</Button>
+        <Button variant="soft" size="medium" shape="round">Soft</Button>
+        <Button variant="surface" size="medium" shape="round">Surface</Button>
+        <Button variant="outline" size="medium" shape="round">Outline</Button>
+        <Button variant="ghost" size="medium" shape="round">Ghost</Button>
       </div>
     </div>
 
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Intents</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center", flexWrap: "wrap" }}>
-        <Button intent="success" variant="solid" size="medium" radius="sm">Success</Button>
-        <Button intent="warning" variant="solid" size="medium" radius="sm">Warning</Button>
-        <Button intent="danger" variant="solid" size="medium" radius="sm">Danger</Button>
-        <Button intent="info" variant="solid" size="medium" radius="sm">Info</Button>
+        <Button intent="success" variant="solid" size="medium" shape="round">Success</Button>
+        <Button intent="warning" variant="solid" size="medium" shape="round">Warning</Button>
+        <Button intent="danger" variant="solid" size="medium" shape="round">Danger</Button>
+        <Button intent="info" variant="solid" size="medium" shape="round">Info</Button>
       </div>
     </div>
 
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Sizes</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <Button size="small" variant="solid" radius="sm">Small</Button>
-        <Button size="medium" variant="solid" radius="sm">Medium</Button>
-        <Button size="large" variant="solid" radius="sm">Large</Button>
+        <Button size="small" variant="solid" shape="round">Small</Button>
+        <Button size="medium" variant="solid" shape="round">Medium</Button>
+        <Button size="large" variant="solid" shape="round">Large</Button>
       </div>
     </div>
 
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Disabled</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <Button variant="outline" size="medium" radius="sm" disabled>Disabled</Button>
+        <Button variant="outline" size="medium" shape="round" disabled>Disabled</Button>
+      </div>
+    </div>
+
+    <div>
+      <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Inactive</h3>
+      <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
+        <Button variant="outline" size="medium" shape="round" inactive>Inactive</Button>
       </div>
     </div>
 
     <div>
       <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Loading</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <Button variant="soft" size="medium" radius="sm" isLoading>Loading</Button>
+        <Button variant="soft" size="medium" shape="round" isLoading>Loading</Button>
       </div>
     </div>
 
     <div>
-      <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Radius</h3>
+      <h3 style={{ marginBottom: "0.5rem", fontSize: "14px", fontWeight: 600 }}>Shapes</h3>
       <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
-        <Button variant="solid" size="medium" radius="xs">Radius xs</Button>
-        <Button variant="solid" size="medium" radius="sm">Radius sm</Button>
-        <Button variant="solid" size="medium" radius="md">Radius md</Button>
-        <Button variant="solid" size="medium" radius="xl">Radius xl</Button>
-        <Button variant="solid" size="medium" radius="full">Radius full</Button>
+        <Button variant="solid" size="medium" shape="square">Square</Button>
+        <Button variant="solid" size="medium" shape="round">Round</Button>
+        <Button variant="solid" size="medium" shape="circle" aria-label="Circle" />
       </div>
     </div>
 
@@ -114,9 +119,10 @@ Playground.args = {
   variant: "default",
   intent: "info",
   size: "medium",
-  radius: "sm",
+  shape: "round",
   className: "w-100",
   disabled: false,
+  inactive: false,
   isLoading: false,
   highContrast: false,
 };
@@ -135,15 +141,16 @@ Playground.argTypes = {
     control: { type: "select" },
     options: ["small", "medium", "large"],
   },
-  radius: {
+  shape: {
     control: { type: "select" },
-    options: ["xs", "sm", "md", "xl", "full"],
+    options: ["square", "round", "circle"],
   },
   block: { control: { type: "boolean" } },
   leadingVisual: { control: false },
   trailingVisual: { control: false },
   highContrast: { control: { type: "boolean" } },
   disabled: { control: { type: "boolean" } },
+  inactive: { control: { type: "boolean" } },
   isLoading: { control: { type: "boolean" } },
 
 };

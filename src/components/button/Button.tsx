@@ -35,8 +35,10 @@ export function Button({
         variant = "solid",
         intent = "info",
         size = "small",
-        radius,
+        shape = "round",
         highContrast,
+        inactive,
+        onClick,
         isLoading = false,
         block = false,
         leadingVisual,
@@ -48,6 +50,7 @@ export function Button({
         const variantClass = `tofu-button-${variant}`;
         const classes = ClassNames("tofu-button", variantClass, className);
         const isDisabled = !!(disabled || isLoading);
+        const isInactive = !!inactive;
         const spinnerSize = mapButtonSizeToSpinnerSize(size);
         const styleWidth = (style as React.CSSProperties | undefined)?.width;
         const containerStyle: React.CSSProperties = {
@@ -62,9 +65,6 @@ export function Button({
 
         const shouldBlock = block && !w && styleWidth == null;
 
-        if (typeof radius === 'number') {
-            containerStyle.borderRadius = radius as number;
-        }
 
         const renderVisual = (visual: React.ReactNode) =>
           visual != null ? (
@@ -111,16 +111,21 @@ export function Button({
                 ref={buttonRef}
                 {...rest}
                 data-disabled={isDisabled || undefined}
-                data-radius={typeof radius === 'string' ? radius : undefined}
+                data-shape={shape}
                 data-size={size}
                 data-intent={intent}
                 data-high-contrast={highContrast || undefined}
                 data-block={shouldBlock || undefined}
                 aria-label={ariaLabel}
-                aria-disabled={isDisabled}
+                aria-disabled={isDisabled || isInactive}
+                data-inactive={isInactive}
                 tabIndex={tabIndex}
                 className={classes}
                 disabled={isDisabled}
+                onClick={isInactive ? (event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                } : onClick}
                 id={id}
                 style={containerStyle}
             >

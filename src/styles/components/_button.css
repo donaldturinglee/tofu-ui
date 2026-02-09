@@ -118,6 +118,17 @@
   --spinner-opacity: 1;
 }
 
+.tofu-button[data-inactive]:not([data-disabled]),
+.tofu-button[data-inactive]:not([data-disabled]):hover,
+.tofu-button[data-inactive]:not([data-disabled]):active {
+  cursor: default;
+  opacity: 0.6;
+  --button-bg-hover: var(--button-bg);
+  --button-bg-active: var(--button-bg);
+  --button-shadow-hover: var(--button-shadow);
+  --button-shadow-active: var(--button-shadow);
+}
+
 .tofu-button:not(.tofu-button-ghost) {
   height: var(--button-height);
   padding-inline: var(--button-padding-x);
@@ -158,20 +169,19 @@
   font-size: var(--font-size-4, 16px);
 }
 
-.tofu-button[data-radius="xs"] {
-  border-radius: var(--radius-1, 4px);
+.tofu-button[data-shape="square"] {
+  border-radius: 0;
 }
-.tofu-button[data-radius="sm"] {
+
+.tofu-button[data-shape="round"] {
   border-radius: var(--radius-2, 6px);
 }
-.tofu-button[data-radius="md"] {
-  border-radius: var(--radius-3, 8px);
-}
-.tofu-button[data-radius="xl"] {
-  border-radius: var(--radius-4, 12px);
-}
-.tofu-button[data-radius="full"] {
+
+.tofu-button[data-shape="circle"] {
   border-radius: var(--radius-full, 9999px);
+  width: var(--button-height);
+  padding-inline: 0;
+  aspect-ratio: 1;
 }
 
 .tofu-button .button-label {
