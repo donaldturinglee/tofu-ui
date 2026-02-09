@@ -5,10 +5,9 @@ export type ButtonVariant = "default" | "primary" | "solid" | "soft" | "surface"
 export type ButtonIntent = "success" | "warning" | "danger" | "info";
 export type ButtonSize = "small" | "medium" | "large";
 
-export interface BaseProps {
+export interface BaseButtonProps {
     as?: ElementType;
     highContrast?: boolean;
-    className?: string;
     variant?: ButtonVariant;
     intent?: ButtonIntent;
     size?: ButtonSize;
@@ -22,7 +21,7 @@ export interface BaseProps {
     trailingVisual?: React.ReactNode;
 }
 
-export interface ButtonProps extends BaseProps, Omit<
+export interface ButtonProps extends BaseButtonProps, Omit<
     ComponentPropsWithoutRef<"button">,
     "type" | "color"
 > {
