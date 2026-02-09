@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 export type SVGData = {
     [height: string]: {
@@ -9,7 +9,7 @@ export type SVGData = {
         /**
          * SVG path content
          */
-        path: React.ReactNode;
+        path: ReactNode;
     };
 };
 

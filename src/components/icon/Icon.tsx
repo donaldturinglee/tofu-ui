@@ -97,6 +97,15 @@ export const AlertIcon = /*#__PURE__*/createIconComponent("AlertIcon", "icon ico
     };
 });
 
+export const AppsListIcon = /*#__PURE__*/createIconComponent("AppsListIcon", "icon icon-apps-list", () => {
+    return {
+        "24": {
+            "width": 24,
+            "path": <path d="M6.248 16.002c.966 0 1.75.784 1.75 1.75v2.498A1.75 1.75 0 0 1 6.248 22H3.75A1.75 1.75 0 0 1 2 20.25v-2.498c0-.966.784-1.75 1.75-1.75zm0 1.5H3.75a.25.25 0 0 0-.25.25v2.498c0 .138.112.25.25.25h2.498a.25.25 0 0 0 .25-.25v-2.498a.25.25 0 0 0-.25-.25m3.5.498h11.505a.75.75 0 0 1 .102 1.493l-.102.007H9.748a.75.75 0 0 1-.102-1.493zh11.505zm-3.5-8.999c.966 0 1.75.784 1.75 1.75v2.498a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 13.249V10.75C2 9.784 2.784 9 3.75 9zm0 1.5H3.75a.25.25 0 0 0-.25.25v2.498c0 .138.112.25.25.25h2.498a.25.25 0 0 0 .25-.25V10.75a.25.25 0 0 0-.25-.25m3.5.499h11.505a.75.75 0 0 1 .102 1.493l-.102.007H9.748a.75.75 0 0 1-.102-1.493zh11.505zm-3.5-9c.966 0 1.75.784 1.75 1.75v2.498a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 6.248V3.75C2 2.784 2.784 2 3.75 2zm0 1.5H3.75a.25.25 0 0 0-.25.25v2.498c0 .138.112.25.25.25h2.498a.25.25 0 0 0 .25-.25V3.75a.25.25 0 0 0-.25-.25m3.5.5h11.505a.75.75 0 0 1 .102 1.493l-.102.007H9.748a.75.75 0 0 1-.102-1.493zh11.505z" />
+        }
+    };
+});
+
 export const ArrowDownIcon = /*#__PURE__*/createIconComponent("ArrowDownIcon", "icon icon-arrow-down", () => {
     return {
         "16": {
@@ -120,6 +129,15 @@ export const ArrowRightIcon = /*#__PURE__*/createIconComponent("ArrowRightIcon",
         "16": {
             "width": 16,
             "path": <path d="M2.5 7.5a.5.5 0 1 0 0 1h9.697l-4.031 3.628a.5.5 0 1 0 .668.744l5-4.5a.5.5 0 0 0 0-.744l-5-4.5a.5.5 0 0 0-.668.744L12.197 7.5z" />
+        }
+    };
+});
+
+export const ArrowSyncIcon = /*#__PURE__*/createIconComponent("ArrowSyncIcon", "icon icon-arrow-sync", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M7.146.646a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 1 1-.708-.708l.643-.642a5 5 0 0 0-2.937 8.88.5.5 0 1 1-.63.777A6 6 0 0 1 7.797 2.003l-.65-.65a.5.5 0 0 1 0-.707m3.929 2.766a.5.5 0 0 1 .703-.073 6 6 0 0 1-3.575 10.658l.65.65a.5.5 0 0 1-.707.707l-1.5-1.5a.5.5 0 0 1 0-.708l1.5-1.5a.5.5 0 0 1 .708.708l-.643.642a5 5 0 0 0 2.937-8.88.5.5 0 0 1-.073-.704" />
         }
     };
 });
@@ -214,6 +232,15 @@ export const BrowserSafariIcon = /*#__PURE__*/createIconComponent("BrowserSafari
     };
 });
 
+export const ButtonIcon = /*#__PURE__*/createIconComponent("ButtonIcon", "icon icon-button", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M1 5.5A2.5 2.5 0 0 1 3.5 3h9A2.5 2.5 0 0 1 15 5.5v4a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 9.5zM3.5 4A1.5 1.5 0 0 0 2 5.5v4A1.5 1.5 0 0 0 3.5 11h9A1.5 1.5 0 0 0 14 9.5v-4A1.5 1.5 0 0 0 12.5 4zM7 7.5a.5.5 0 0 1 .5-.5H12a.5.5 0 0 1 0 1H7.5a.5.5 0 0 1-.5-.5m-1 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
+        }
+    };
+});
+
 export const CalendarCheckmarkCenterIcon = /*#__PURE__*/createIconComponent("CalendarCheckmarkCenterIcon", "icon icon-calendar-checkmark-center", () => {
     return {
         "16": {
@@ -264,6 +291,15 @@ export const CaretUpFilledIcon = /*#__PURE__*/createIconComponent("CaretUpFilled
         "16": {
             "width": 16,
             "path": <path d="M4.957 10.998a1 1 0 0 1-.821-1.571l2.633-3.784a1.5 1.5 0 0 1 2.462 0l2.633 3.784a1 1 0 0 1-.821 1.571z" />
+        }
+    };
+});
+
+export const ChartMultipleIcon = /*#__PURE__*/createIconComponent("ChartMultipleIcon", "icon icon-chart-multiple", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M12 7c0-.684.343-1.287.866-1.648A5.574 5.574 0 0 0 7.43 1a.436.436 0 0 0-.43.445V6.5a.5.5 0 0 0 .5.5zM8 2.035A4.574 4.574 0 0 1 11.965 6H8zM1 7.501a5.5 5.5 0 0 0 5 5.477v-1.005a4.5 4.5 0 0 1-1-8.716V7a2 2 0 0 0 2 2h2c0-.364.097-.706.268-1H7a1 1 0 0 1-1-1V2.571c0-.294-.253-.526-.542-.47A5.5 5.5 0 0 0 1 7.5M14 6a1 1 0 0 0-1 1v7a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1m-3 2a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1m-4 3a1 1 0 1 1 2 0v3a1 1 0 1 1-2 0z" />
         }
     };
 });
@@ -367,6 +403,33 @@ export const CircleFilledIcon = /*#__PURE__*/createIconComponent("CircleFilledIc
     };
 });
 
+export const CircleHintIcon = /*#__PURE__*/createIconComponent("CircleHintIcon", "icon icon-circle-hint", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M4.857 2.377a.475.475 0 0 0-.698-.23 7 7 0 0 0-2.014 2.017.475.475 0 0 0 .23.697.54.54 0 0 0 .645-.208 6 6 0 0 1 1.63-1.63.54.54 0 0 0 .207-.646m1.988-.266a.54.54 0 0 1-.603-.31.475.475 0 0 1 .33-.655 7 7 0 0 1 2.851-.001c.294.06.446.378.33.655a.54.54 0 0 1-.602.31 6 6 0 0 0-2.306.001m6.78 2.747a.54.54 0 0 1-.645-.208 6 6 0 0 0-1.633-1.63.54.54 0 0 1-.207-.646.475.475 0 0 1 .697-.23 7 7 0 0 1 2.018 2.017.475.475 0 0 1-.23.697m.575 4.9a.54.54 0 0 1-.31-.603 6 6 0 0 0 0-2.308.54.54 0 0 1 .31-.604.475.475 0 0 1 .656.33 7 7 0 0 1 0 2.856.475.475 0 0 1-.656.33m-3.06 3.868a.54.54 0 0 1 .208-.645 6 6 0 0 0 1.63-1.63.54.54 0 0 1 .646-.207.475.475 0 0 1 .23.697 7 7 0 0 1-2.017 2.015.475.475 0 0 1-.697-.23m-4.898.573a.54.54 0 0 1 .603-.31 6 6 0 0 0 2.306 0 .54.54 0 0 1 .603.31.475.475 0 0 1-.33.656 7 7 0 0 1-2.852-.001.475.475 0 0 1-.33-.655m-3.866-3.06a.54.54 0 0 1 .645.207 6 6 0 0 0 1.628 1.63c.211.142.305.41.208.645a.475.475 0 0 1-.698.23 7 7 0 0 1-2.013-2.015.475.475 0 0 1 .23-.697m-.575-4.894a.54.54 0 0 1 .31.603 6 6 0 0 0 0 2.302.54.54 0 0 1-.31.603.475.475 0 0 1-.655-.33 7 7 0 0 1 0-2.848.475.475 0 0 1 .655-.33" />
+        }
+    };
+});
+
+export const CircleSmallIcon = /*#__PURE__*/createIconComponent("CircleSmallIcon", "icon icon-circle-small", () => {
+    return {
+        "24": {
+            "width": 24,
+            "path": <path d="M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M8 12a4 4 0 1 1 8 0 4 4 0 0 1-8 0" />
+        }
+    };
+});
+
+export const ClipboardIcon = /*#__PURE__*/createIconComponent("ClipboardIcon", "icon icon-clipboard", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M5.085 2A1.5 1.5 0 0 1 6.5 1h3a1.5 1.5 0 0 1 1.415 1h.585A1.5 1.5 0 0 1 13 3.5v10a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 13.5v-10A1.5 1.5 0 0 1 4.5 2zM6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM5.085 3H4.5a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-10a.5.5 0 0 0-.5-.5h-.585A1.5 1.5 0 0 1 9.5 4h-3a1.5 1.5 0 0 1-1.415-1" />
+        }
+    };
+});
+
 export const ColorIcon = /*#__PURE__*/createIconComponent("ColorIcon", "icon icon-color", () => {
     return {
         "16": {
@@ -381,6 +444,15 @@ export const CurrencyDollarIcon = /*#__PURE__*/createIconComponent("CurrencyDoll
         "16": {
             "width": 16,
             "path": <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73z" />
+        }
+    };
+});
+
+export const CursorHoverIcon = /*#__PURE__*/createIconComponent("CursorHoverIcon", "icon icon-cursor-hover", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M1 5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5a2 2 0 0 1-1.164 1.818 1.5 1.5 0 0 0-.275-.379l-.446-.446A1 1 0 0 0 14 10V5a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h4v1H3a2 2 0 0 1-2-2zm7.854 3.146A.5.5 0 0 0 8 8.5v6a.5.5 0 0 0 .9.3l1.35-1.8h2.25a.5.5 0 0 0 .354-.854zM9 13V9.707L11.293 12H10a.5.5 0 0 0-.4.2z" />
         }
     };
 });
@@ -444,6 +516,15 @@ export const DocumentIcon = /*#__PURE__*/createIconComponent("DocumentIcon", "ic
         "16": {
             "width": 16,
             "path": <path d="M5 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5.414a1.5 1.5 0 0 0-.44-1.06L9.647 1.439A1.5 1.5 0 0 0 8.586 1zM4 3a1 1 0 0 1 1-1h3v2.5A1.5 1.5 0 0 0 9.5 6H12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1zm7.793 2H9.5a.5.5 0 0 1-.5-.5V2.207z" />
+        }
+    };
+});
+
+export const DocumentArrowUpIcon = /*#__PURE__*/createIconComponent("DocumentArrowUpIcon", "icon icon-document-arrow-up", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M4 3a2 2 0 0 1 2-2h3.586a1.5 1.5 0 0 1 1.06.44l2.915 2.914A1.5 1.5 0 0 1 14 5.414V13a2 2 0 0 1-2 2H8.663a5.5 5.5 0 0 0 1.08-1H12a1 1 0 0 0 1-1V6h-2.5A1.5 1.5 0 0 1 9 4.5V2H6a1 1 0 0 0-1 1v2.022a5.5 5.5 0 0 0-1 .185zm6.5 2h2.293L10 2.207V4.5a.5.5 0 0 0 .5.5m-5 10a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9m2.354-4.854a.5.5 0 0 1-.708.708L6 9.707V12.5a.5.5 0 0 1-1 0V9.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2A.5.5 0 0 1 5.497 8h.006a.5.5 0 0 1 .348.144l.003.003z" />
         }
     };
 });
@@ -547,6 +628,15 @@ export const HomeIcon = /*#__PURE__*/createIconComponent("HomeIcon", "icon icon-
     };
 });
 
+export const ImageIcon = /*#__PURE__*/createIconComponent("ImageIcon", "icon icon-image", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M11.5 5.502a1.002 1.002 0 1 1-2.004 0 1.002 1.002 0 0 1 2.004 0M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5zM4.5 3A1.5 1.5 0 0 0 3 4.5v7c0 .232.052.45.146.647l3.652-3.652a1.7 1.7 0 0 1 2.404 0l3.652 3.652A1.5 1.5 0 0 0 13 11.5v-7A1.5 1.5 0 0 0 11.5 3zm7.647 9.854L8.495 9.202a.7.7 0 0 0-.99 0l-3.652 3.652c.196.094.415.146.647.146h7c.232 0 .45-.053.647-.146" />
+        }
+    };
+});
+
 export const ImageCopyIcon = /*#__PURE__*/createIconComponent("ImageCopyIcon", "icon icon-image-copy", () => {
     return {
         "24": {
@@ -610,6 +700,42 @@ export const LayoutColumnTwoIcon = /*#__PURE__*/createIconComponent("LayoutColum
     };
 });
 
+export const LineHorizontal1DashesIcon = /*#__PURE__*/createIconComponent("LineHorizontal1DashesIcon", "icon icon-line-horizontal1-dashes", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M2 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5m4.5 0A.5.5 0 0 1 7 7h2a.5.5 0 0 1 0 1H7a.5.5 0 0 1-.5-.5m4.5 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5" />
+        }
+    };
+});
+
+export const LineHorizontal3Icon = /*#__PURE__*/createIconComponent("LineHorizontal3Icon", "icon icon-line-horizontal3", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M2 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+        }
+    };
+});
+
+export const LineHorizontal4Icon = /*#__PURE__*/createIconComponent("LineHorizontal4Icon", "icon icon-line-horizontal4", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1zM2 9.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z" />
+        }
+    };
+});
+
+export const ListIcon = /*#__PURE__*/createIconComponent("ListIcon", "icon icon-list", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M2 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M2.5 7a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1z" />
+        }
+    };
+});
+
 export const LocationArrowIcon = /*#__PURE__*/createIconComponent("LocationArrowIcon", "icon icon-location-arrow", () => {
     return {
         "16": {
@@ -619,11 +745,38 @@ export const LocationArrowIcon = /*#__PURE__*/createIconComponent("LocationArrow
     };
 });
 
+export const MailIcon = /*#__PURE__*/createIconComponent("MailIcon", "icon icon-mail", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M2 6.038V11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2zM4 4h8a1 1 0 0 1 1 1v.74L8 8.432 3 5.74V5a1 1 0 0 1 1-1M3 6.876 7.763 9.44a.5.5 0 0 0 .474 0L13 6.876V11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+        }
+    };
+});
+
 export const MailReadIcon = /*#__PURE__*/createIconComponent("MailReadIcon", "icon icon-mail-read", () => {
     return {
         "16": {
             "width": 16,
             "path": <path d="M8.237 1.56a.5.5 0 0 0-.474 0L1.789 4.777A1.5 1.5 0 0 0 1 6.097V12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6.097a1.5 1.5 0 0 0-.789-1.32zM2.263 5.657 8 2.567l5.737 3.09a.5.5 0 0 1 .157.133L8 8.933 2.106 5.79a.5.5 0 0 1 .157-.133M2 6.867 7.765 9.94a.5.5 0 0 0 .47 0L14 6.867V12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+        }
+    };
+});
+
+export const MatchAppLayoutIcon = /*#__PURE__*/createIconComponent("MatchAppLayoutIcon", "icon icon-match-app-layout", () => {
+    return {
+        "24": {
+            "width": 24,
+            "path": <path d="M9.282 8c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0 1 9.282 16H3.75A1.75 1.75 0 0 1 2 14.25v-4.5a1.75 1.75 0 0 1 1.606-1.744L3.75 8zM20.25 8c.966 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0 1 20.25 16h-5.532a1.75 1.75 0 0 1-1.75-1.75v-4.5c0-.966.784-1.75 1.75-1.75zM9.282 9.5H3.75l-.057.007a.25.25 0 0 0-.193.243v4.5c0 .138.112.25.25.25h5.532a.25.25 0 0 0 .25-.25v-4.5a.25.25 0 0 0-.25-.25m10.968 0h-5.532a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h5.532a.25.25 0 0 0 .25-.25v-4.5a.25.25 0 0 0-.25-.25" />
+        }
+    };
+});
+
+export const MoreHorizontalIcon = /*#__PURE__*/createIconComponent("MoreHorizontalIcon", "icon icon-more-horizontal", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
         }
     };
 });
@@ -745,6 +898,15 @@ export const PersonIcon = /*#__PURE__*/createIconComponent("PersonIcon", "icon i
     };
 });
 
+export const PersonKeyIcon = /*#__PURE__*/createIconComponent("PersonKeyIcon", "icon icon-person-key", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M12 6a3 3 0 1 1-1 5.83v.67a.5.5 0 0 1-.5.5H10v.5a.5.5 0 0 1-.5.5H9v.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.086a1 1 0 0 1 .293-.707l2.836-2.836A3 3 0 0 1 12 6M8.126 8Q8.002 8.481 8 9H3.5a.5.5 0 0 0-.5.5v.5c0 1.041.752 2.148 2.142 2.679a2 2 0 0 0-.142.735v.274C3.086 13.045 2 11.506 2 10v-.5A1.5 1.5 0 0 1 3.5 8zm4.624-.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5M7 1.5A2.75 2.75 0 1 1 7 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 7 6a1.75 1.75 0 0 0 0-3.5" />
+        }
+    };
+});
+
 export const PresenceBlockedIcon = /*#__PURE__*/createIconComponent("PresenceBlockedIcon", "icon icon-presence-blocked", () => {
     return {
         "16": {
@@ -759,6 +921,33 @@ export const QuestionCircleIcon = /*#__PURE__*/createIconComponent("QuestionCirc
         "16": {
             "width": 16,
             "path": <path d="M8 1a7 7 0 1 1 0 14A7 7 0 0 1 8 1m0 1a6 6 0 1 0 0 12A6 6 0 0 0 8 2m0 8.5A.75.75 0 1 1 8 12a.75.75 0 0 1 0-1.5M8 4a2 2 0 0 1 2 2c0 .458-.125.803-.325 1.089-.178.253-.426.463-.578.61-.17.164-.309.318-.411.534-.103.216-.186.528-.186 1.017a.5.5 0 0 1-1 0c0-.606.105-1.07.283-1.445a2.8 2.8 0 0 1 .62-.826c.222-.214.35-.316.453-.464C8.937 6.399 9 6.255 9 6a1 1 0 0 0-2 0 .5.5 0 0 1-1 0 2 2 0 0 1 2-2" />
+        }
+    };
+});
+
+export const RadioButtonIcon = /*#__PURE__*/createIconComponent("RadioButtonIcon", "icon icon-radio-button", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M8 3a5 5 0 1 0 0 10A5 5 0 0 0 8 3M2 8a6 6 0 1 1 12 0A6 6 0 0 1 2 8" />
+        }
+    };
+});
+
+export const RadioButtonFilledIcon = /*#__PURE__*/createIconComponent("RadioButtonFilledIcon", "icon icon-radio-button-filled", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0-9a6 6 0 1 0 0 12A6 6 0 0 0 8 2M3 8a5 5 0 1 1 10 0A5 5 0 0 1 3 8" />
+        }
+    };
+});
+
+export const RectangleLandscapeIcon = /*#__PURE__*/createIconComponent("RectangleLandscapeIcon", "icon icon-rectangle-landscape", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M1 5.5A2.5 2.5 0 0 1 3.5 3h9A2.5 2.5 0 0 1 15 5.5v5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 10.5zM3.5 4A1.5 1.5 0 0 0 2 5.5v5A1.5 1.5 0 0 0 3.5 12h9a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 12.5 4z" />
         }
     };
 });
@@ -795,6 +984,15 @@ export const SidebarRightIcon = /*#__PURE__*/createIconComponent("SidebarRightIc
         "16": {
             "width": 16,
             "path": <path d="m6.293 8.5-.647.647a.5.5 0 1 0 .708.707l1.5-1.5a.5.5 0 0 0 0-.707l-1.5-1.5a.5.5 0 1 0-.708.707l.647.646H4.502a.5.5 0 1 0 0 1zM12 13.001a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v6.002a2 2 0 0 0 2 2zm1-2a1 1 0 0 1-1 1H9.998V4H12a1 1 0 0 1 1 1zM8.998 4v8.002H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" />
+        }
+    };
+});
+
+export const SignOutIcon = /*#__PURE__*/createIconComponent("SignOutIcon", "icon icon-sign-out", () => {
+    return {
+        "24": {
+            "width": 24,
+            "path": <path d="M8.502 11.5a1.002 1.002 0 1 1 0 2.004 1.002 1.002 0 0 1 0-2.005M12 4.353v6.65h7.442L17.72 9.28a.75.75 0 0 1-.073-.977l.073-.084a.75.75 0 0 1 .976-.072l.084.072 2.997 2.998a.75.75 0 0 1 .073.976l-.073.084-2.996 3.003a.75.75 0 0 1-1.134-.975l.072-.084 1.713-1.717h-7.431L12 19.25a.75.75 0 0 1-.88.738l-8.5-1.501a.75.75 0 0 1-.62-.739V5.75a.75.75 0 0 1 .628-.74l8.5-1.396a.75.75 0 0 1 .872.74m-1.5.883-7 1.15v10.732l7 1.236zM13 18.5h.765l.102-.007a.75.75 0 0 0 .648-.744l-.007-4.25H13zm.002-8.5L13 8.725V5h.745a.75.75 0 0 1 .743.647l.007.101.007 4.252z" />
         }
     };
 });
@@ -844,6 +1042,15 @@ export const TableIcon = /*#__PURE__*/createIconComponent("TableIcon", "icon ico
     };
 });
 
+export const TagIcon = /*#__PURE__*/createIconComponent("TagIcon", "icon icon-tag", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M11 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-8.413 4.136a1.99 1.99 0 0 1 0-2.822l4.74-4.716a2 2 0 0 1 1.41-.584L11.986 2A2 2 0 0 1 14 4.01l-.024 3.363a2 2 0 0 1-.588 1.396l-4.67 4.647a2.01 2.01 0 0 1-2.835 0zm.709-2.116a.994.994 0 0 0 0 1.41l3.296 3.28c.392.39 1.026.39 1.418 0l4.67-4.647a1 1 0 0 0 .293-.698l.024-3.363a1 1 0 0 0-1.006-1.004l-3.25.013a1 1 0 0 0-.705.292z" />
+        }
+    };
+});
+
 export const TextFontIcon = /*#__PURE__*/createIconComponent("TextFontIcon", "icon icon-text-font", () => {
     return {
         "16": {
@@ -858,6 +1065,24 @@ export const TextboxIcon = /*#__PURE__*/createIconComponent("TextboxIcon", "icon
         "16": {
             "width": 16,
             "path": <path d="M5.5 5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm-1-8A2.5 2.5 0 0 0 2 4.5v7A2.5 2.5 0 0 0 4.5 14h7a2.5 2.5 0 0 0 2.5-2.5v-7A2.5 2.5 0 0 0 11.5 2zM3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5z" />
+        }
+    };
+});
+
+export const TimelineIcon = /*#__PURE__*/createIconComponent("TimelineIcon", "icon icon-timeline", () => {
+    return {
+        "24": {
+            "width": 24,
+            "path": <path d="M15.25 13c.967 0 1.75.784 1.75 1.75v4.5A1.75 1.75 0 0 1 15.25 21H3.75A1.75 1.75 0 0 1 2 19.25v-4.5c0-.966.784-1.75 1.75-1.75zM21 14.899v5.351a.75.75 0 0 1-1.493.102l-.007-.102v-5.338a3 3 0 0 0 1.5-.013m-5.75-.399H3.75a.25.25 0 0 0-.25.25v4.5c0 .138.112.25.25.25h11.5a.25.25 0 0 0 .25-.25v-4.5a.25.25 0 0 0-.25-.25m5-4.408a1.908 1.908 0 1 1 0 3.816 1.908 1.908 0 0 1 0-3.816M15.246 3c.967 0 1.75.784 1.75 1.75v4.5a1.75 1.75 0 0 1-1.75 1.75h-11.5a1.75 1.75 0 0 1-1.75-1.75v-4.5a1.75 1.75 0 0 1 1.607-1.744L3.746 3zm0 1.5h-11.5l-.057.007a.25.25 0 0 0-.193.243v4.5c0 .138.112.25.25.25h11.5a.25.25 0 0 0 .25-.25v-4.5a.25.25 0 0 0-.25-.25M20.25 3a.75.75 0 0 1 .744.648L21 3.75v5.351a3 3 0 0 0-1.5-.013V3.75a.75.75 0 0 1 .75-.75" />
+        }
+    };
+});
+
+export const TooltipQuoteIcon = /*#__PURE__*/createIconComponent("TooltipQuoteIcon", "icon icon-tooltip-quote", () => {
+    return {
+        "16": {
+            "width": 16,
+            "path": <path d="M9.5 14a.5.5 0 0 1 0 1h-8a.5.5 0 0 1 0-1zm-5.428-2H1.5a.5.5 0 0 1 0-1h2.072zM8.25 1C9.216 1 10 1.784 10 2.75v4.5A1.75 1.75 0 0 1 8.25 9h-.941l-1.362 2.724a.5.5 0 0 1-.894 0L3.69 9h-.94A1.75 1.75 0 0 1 1 7.25v-4.5C1 1.784 1.784 1 2.75 1zm6.25 10a.5.5 0 0 1 0 1H6.928l.5-1zM2.75 2a.75.75 0 0 0-.75.75v4.5c0 .414.336.75.75.75H4a.5.5 0 0 1 .447.276L5.5 10.382l1.053-2.106.036-.06A.5.5 0 0 1 7 8h1.25A.75.75 0 0 0 9 7.25v-4.5A.75.75 0 0 0 8.25 2zm1.84 1.009a.5.5 0 0 1 .405.42l.023.188a3.54 3.54 0 0 1-.496 2.171 3.7 3.7 0 0 1-.631.785l-.075.065h-.002l-.002.003a.5.5 0 0 1-.624-.782l.001-.002.027-.023a2.7 2.7 0 0 0 .45-.56 2.7 2.7 0 0 0 .21-.444l-.022.024A.5.5 0 0 1 3 4.5v-1l.01-.1A.5.5 0 0 1 3.5 3h1zm3 0a.5.5 0 0 1 .405.42l.023.188a3.54 3.54 0 0 1-.496 2.171 3.7 3.7 0 0 1-.631.785l-.069.06-.006.005h-.002l-.002.003a.5.5 0 0 1-.625-.782l.002-.002.027-.023a2.7 2.7 0 0 0 .45-.56 2.7 2.7 0 0 0 .21-.444l-.022.024A.5.5 0 0 1 6 4.5v-1l.01-.1A.5.5 0 0 1 6.5 3h1z" />
         }
     };
 });
